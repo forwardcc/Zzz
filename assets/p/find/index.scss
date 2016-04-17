@@ -1,0 +1,14 @@
+@charset"utf-8";
+
+@import '../../c/common.scss';
+@import '../../c/variables.scss';
+@import '../../c/header-footer.scss';
+
+body {
+	background: $bodyBackColor;
+}
+.main-content {
+	.content {
+		// background: #fff;
+	}
+}

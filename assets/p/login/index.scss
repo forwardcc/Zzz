@@ -1,0 +1,137 @@
+@charset"utf-8";
+
+@import '../../c/mixin.scss';
+@import '../../c/common.scss';
+@import '../../c/variables.scss';
+@import '../../c/header-footer.scss';
+
+body {
+    background: $bodyBackColor;
+
+}
+.main-content {
+	min-height: 800px;
+}
+button {
+	width: 290px;
+	@include vertical-center(32px);
+	border-radius: 2px;
+	background-color: $backBlue;
+	color: #fff;
+	border: 0 none;
+	outline: none;
+	line-height: 1;
+    font-style: normal;
+    text-align: center;
+}
+.login-register-box {
+	width: 290px;
+	height: 400px;
+	padding: 40px 50px 50px;
+	margin: 28px auto 0;
+	background: #fff;
+	font-size: $textSize;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    &.register {
+        height: 450px;
+    }
+	.hd {
+		font-size: 0;
+		a {
+			width: 145px;
+			@include vertical-center(40px);
+			text-align: center;
+			font-size: 13px;
+			color: $textColor;
+			border-bottom: 2px solid #bbb;
+			&.active {
+				border-bottom: 2px solid #459ff3;
+			}
+		}
+	}
+	.login-bd {
+		padding-top: 50px;
+		.operate {
+			position: relative;
+			margin: 20px 0 50px;
+			color: #9b9b9b;
+			font-size: 12px;
+			.tips {
+				position: absolute;
+				top: -30px;
+				right: -35px;
+				width: 117px;
+				@include vertical-center(24px)
+				color: #fff;
+				text-align: center;
+				background-color: $backBlue;
+			}
+			.arrow {
+				top: 24px;
+    			right: 53px;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(0, 0, 0, 0);
+				border-top-color: $backBlue;
+				border-width: 5px;
+				margin-left: -5px;
+			}
+			.forget-pwd {
+				cursor: pointer;
+			}
+		}
+	}
+	.register-bd {
+		padding-top: 30px;
+	}
+	.upload-card {
+        span {
+            color: #989898;
+            pointer-events: none;
+        }
+		.up-button {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 20px;
+            margin: 6px 11px 0 0;
+            line-height: 20px;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            background: #459ff3;
+            border-radius: 2px;
+            overflow: hidden;
+            text-decoration: none;
+            text-indent: 0;
+		}
+		input {
+            position: absolute;
+            font-size: 100px;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer
+		}
+	}
+	.ipt {
+		width: 290px;
+		@include vertical-center(32px);
+		border-radius: 2px;
+		background-color: #f8f8f8;
+		border: 1px solid #eeeeee;
+		margin-bottom: 10px;
+		text-indent: 14px;
+		&.ipt-position {
+			width: 160px;
+		}
+		&.ipt-name {
+			width: 112px;
+			margin-right: 10px;
+		}
+	}
+}

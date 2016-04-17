@@ -1,0 +1,110 @@
+@charset"utf-8";
+
+@import '../../c/mixin.scss';
+@import '../../c/common.scss';
+@import '../../c/variables.scss';
+@import '../../c/header-footer.scss';
+
+body {
+    background: $bodyBackColor;
+}
+
+.main-content {
+    .category {
+        .main-cate {
+            .item {
+                width: 136px;
+            }
+        }
+    }
+    
+    // mini 赛道
+    .mini-roads {
+        position: relative;
+        padding-top: 26px;
+        margin-bottom: 10px;
+        font-size: $textSize;
+        .slide-btns {
+            position: absolute;
+            right: 0;
+            top: -12px;
+            a {
+                width: 24px;
+                @include vertical-center(24px);
+                margin-left: 8px;
+                text-align: center;
+                color: #949494;
+                border: solid 1px #d1d1d1;
+                background-color: #fff;
+                &.disable {
+                    background-color: #dedede;
+                }
+            }
+        }
+        .mini-road-list {
+            .mini-r-item {
+                width: 298px;
+                height: 208px;
+                margin-right: 10px;
+                border: 1px solid #ececec;
+                background-color: #fff;
+                &:hover {
+                    box-shadow: 1px 1px 10px 2px $backBlue;
+                }
+                .r-name {
+                    @include vertical-center(34px);
+                    text-align: center;
+                    font-size: 13px;
+                    background-color: #f5f5f5;
+                }
+                .r-players {
+                    padding-left: 15px;
+                    padding-bottom: 10px;
+                    margin-top: 12px;
+                    border-bottom: 1px solid #ececec;
+                    .r-players-item {
+                        margin-right: 7px;
+                    }
+                    .r-player-img {
+                        width: 80px;
+                        height: 80px;
+                        padding: 2px;
+                        border: 1px solid #ececec;
+                    }
+                    .r-player-name {
+                        margin-top: 5px;
+                        font-size: 12px;
+                        color: #808080;
+                        text-align: center;
+                    }
+                }
+                .r-btns {
+                    a {
+                        width: 147px;
+                        @include vertical-center(40px);
+                        text-align: center;
+                        color: $textColor;
+                        &.favor {
+                            width: 146px;
+                            border-right: 1px solid #ececec; 
+                        }
+                    }
+                }
+            }
+        }
+        .add-road {
+            width: 250px;
+            height: 210px;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            background-color: #459ff3;
+            img {
+                width: 20px;
+                height: 20px;
+                margin-top: 72px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

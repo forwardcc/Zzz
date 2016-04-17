@@ -1,0 +1,87 @@
+@import 'mixin.scss';
+@import 'variables.scss';
+
+.header {
+    width: 100%;
+    height: 64px;
+    background: #fff;
+    .content {
+        @include center-block;
+        height: 64px;
+    }
+    .logo {
+        width: 108px;
+        height: 64px;
+        margin-right: 120px;
+        background: url(#{$picURL}/logo@2x.png) no-repeat center center;
+        background-size: 100%;
+    }
+    .menu {
+        .item {
+            line-height: 64px;
+            padding: 0 16px;
+            margin-right: 10px;
+            color: $textColor;
+            font-size: $textSize;
+            &.active {
+                background: $backBlue;
+                color: #fff;
+            }
+            &.find-road {
+                position: relative;
+                img {
+                    position: absolute;
+                    top: 11px;
+                    right: -7px;
+                    width: 22px;
+                    height: 19px;
+                }
+            }
+        }
+    }
+    .header-right {
+        margin-top: 16px;
+    }
+    .search-form {
+        width: 270px;
+        height: 32px;
+        margin-right: 32px;
+        .keywords {
+            width: 176px;
+            height: 18px;
+            padding: 6px 25px;
+            line-height: 18px;
+            font-size: $textSize;
+            border: solid 1px #eee;
+            background-color: #f8f8f8;
+            outline: none !important;
+        }
+        button {
+            width: 42px;
+            height: 32px;
+            border: 0 none;
+            background-color: #459ff3;
+            .icon {
+                margin-top: 6px;
+            }
+        }
+    }
+    .user-btn {
+        width: 60px;
+        height: 32px;
+        margin-right: 4px;
+        line-height: 32px;
+        text-align: center;
+        color: $textColor;
+        border: 1px solid #ccc;
+    }
+}
+
+.footer {
+    width: 100%;
+    @include vertical-center(96px);
+    text-align: center;
+    color: #fff;
+    font-size: $textSize;
+    background-color: #3c3c3c;
+}

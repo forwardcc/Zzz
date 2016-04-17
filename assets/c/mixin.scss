@@ -1,0 +1,9 @@
+@mixin center-block {
+	width: 1180px;
+  	margin: auto;
+}
+
+@mixin vertical-center($height) {
+  height: $height;
+  line-height: $height;
+}
