@@ -82,6 +82,12 @@ i.icon {
     &.iconqixinbao {
         background-image: url(#{$picURL}/iconqixinbao.png);
     }
+    &.focus-normal {
+        background-image: url(#{$picURL}/iconfocus_normal@2x.png);
+    }
+    &.focus-active {
+        background-image: url(#{$picURL}/iconfocus_active@2x.png);
+    }
     
     
 }
@@ -103,7 +109,7 @@ i.icon {
 
     // 通用的分类
     .category {
-        padding: 22px 50px;
+        padding: 22px 50px 35px;
         margin-bottom: 20px;
         background: #fff;
         // 主分类
@@ -127,15 +133,16 @@ i.icon {
             width: 160px;
             @include vertical-center(40px);
             position: relative;
-            overflow: hidden;
+            // overflow: hidden;
             border: 1px solid #ccc;
             text-align: center;
             font-size: $textSize;
             cursor: pointer;
-            &:hover {
-                overflow: visible;
-            }
+            // &:hover {
+            //     overflow: visible;
+            // }
             .order-types {
+                display: none;
                 margin-left: -1px;
                 margin-top: 10px;
                 box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
@@ -148,6 +155,10 @@ i.icon {
                     text-align: center;
                     font-size: $textSize;
                     cursor: pointer;
+                    &:hover {
+                        color: #fff;
+                        background: #459ff3;
+                    }
                 }
             }
         }
@@ -165,6 +176,7 @@ i.icon {
                     color: $textColor;
                     margin-right: 15px;
                     margin-bottom: 7px;
+                    cursor: pointer;
                     &.active {
                         background: $backBlue;
                         color: #fff;
@@ -191,6 +203,7 @@ i.icon {
                     margin-right: 20px;
                     background: $backBlue;
                     color: #fff;
+                    cursor: pointer;
                     i {
                         position: absolute;
                         right: 12px;
@@ -230,6 +243,7 @@ i.icon {
             .basic-info {
                 margin-bottom: 13px;
                 .p-name {
+                    color: $textColor;
                     margin-right: 20px;
                     font-size: 22px;
                 }
@@ -244,6 +258,11 @@ i.icon {
                     position: relative;
                     top: 5px;
                     margin-right: 15px;
+                    .wx-qrcode {
+                        position: absolute;
+                        top: -47px;
+                        left: -14px;
+                    }
                     .wechat {
                         margin-right: 10px;
                     }
@@ -316,16 +335,106 @@ i.icon {
                     box-shadow: 0 0 3px 0 $activeColor;
                     background: #fff;
                 }
+                &.operate.active {
+                    color: #fff;
+                    background-color: $activeColor;
+                    border-color: $activeColor;
+                }
                 &.favor {
+                    position: relative;
                     width: 86px;
                     margin-right: 0;
                     border: 0 none;
                     background: #feb235;
-                    color: #fff;
-                    .icon {
-                        position: relative;
-                        top: 4px;
-                        right: 3px;
+                    cursor: pointer;
+                    .collect-btn {
+                        color: #fff;
+                        .icon {
+                            position: relative;
+                            top: 4px;
+                            right: 3px;
+                        }
+                    }
+                    .my-roads {
+                        position: absolute;
+                        right: 0;
+                        top: 50px;
+                        width: 228px;
+                        border-radius: 5px;
+                        background-color: #fff;
+                        box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.2);
+                        border: solid 1px #ececec;
+                        font-size: 12px;
+                        text-align: left;
+                        z-index: 10;
+                        .arrow {
+                            position: absolute;
+                            background: #FFFFFF;
+                            border: 1px solid #ececec;
+                            right: 15px;
+                            top: -1px;
+                        }
+                        .arrow:after,
+                        .arrow:before {
+                            bottom: 100%;
+                            right: 0;
+                            border: solid transparent;
+                            content: " ";
+                            height: 0;
+                            width: 0;
+                            position: absolute;
+                            pointer-events: none;
+                        }
+                        .arrow:after {
+                            border-color: rgba(136, 183, 213, 0);
+                            border-bottom-color: #FFFFFF;
+                            border-width: 10px;
+                            margin-right: 0px;
+                        }
+                        .arrow:before {
+                            border-color: rgba(194, 225, 245, 0);
+                            border-bottom-color: #ececec;
+                            border-width: 12px;
+                            margin-right: -2px;
+                        }
+                        .hd {
+                            @include vertical-center(30px);
+                            text-align: center;
+                            border-bottom: 1px solid #ececec;
+                        }
+                        .roads-container {
+                            height: 104px;
+                            overflow-y: scroll;
+                        }
+                        .r-item {
+                            padding-left: 18px;
+                            @include vertical-center(26px);
+                            cursor: pointer;
+                            &:hover {
+                                background-color: #ebf4ff;
+                            }
+                        }
+                        .add-new {
+                            border-top: 1px solid #ececec;
+                            input {
+                                border: 0 none;
+                                height: 20px;
+                                line-height: 20px;
+                                text-indent: 18px;
+                                outline: none;
+                                margin-top: 5px;
+                            }
+                            a {
+                                width: 40px;
+                                height: 20px;
+                                line-height: 20px;
+                                margin-top: 5px;
+                                margin-right: 10px;
+                                color: #4a4a4a;
+                                border: 1px solid #ececec;
+                                text-align: center;
+                            }
+                        }
                     }
                 }
             }
@@ -337,6 +446,15 @@ i.icon {
                     border-color: $activeColor;
                 }
             }
+        }
+    }
+    .project-notlogin-tips {
+        margin-bottom: 40px;
+        text-align: center;
+        color: $textColor;
+        font-size: $textSize;
+        a {
+            color: #49a1f3;
         }
     }
     

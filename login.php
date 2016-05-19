@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" />     
     <title>登录</title>
     <link rel="stylesheet" href="assets/p/login/index.css">
+    <?php include('script.php'); ?>
 </head>
 <body>
 
@@ -29,9 +30,9 @@
                     <input type="checkbox" id="remember-pwd" class="dib">
                     <span class="dib">记住我</span>
                 </label>
-                <span class="tips">直接联系管理员许高<i class="arrow"></i></span>
+                <span class="tips J_ContactManager hide">直接联系管理员许高<i class="arrow"></i></span>
                 
-                <span class="forget-pwd fr">忘记密码</span>
+                <span class="forget-pwd fr J_ForgetPwd">忘记密码</span>
             </div>
             <button type="submit" >登 录</button>
         </div>
@@ -42,6 +43,10 @@
 
 
 <?php include('footer.php'); ?>
+
+<script>
+    seajs.use('p/login/index.js');
+</script>
 </body>
 
 </html>

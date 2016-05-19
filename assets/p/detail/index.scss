@@ -53,6 +53,7 @@ body {
             background: #fff;
             .intro-bd {
                 margin-left: 54px;
+                position: relative;
                 .c-basic {
                     margin-bottom: 16px;
                     padding-bottom: 16px;
@@ -79,14 +80,17 @@ body {
                 }
                 .c-desc {
                     position: relative;
+                    height: 84px;
+                    padding-bottom: 5px;
                     line-height: 2;
-                    .unfold {
-                        position: absolute;
-                        right: 0;
-                        top: 65spx;
-                        color: #55adff;
-                        font-size: 12px;
-                    }
+                    overflow-y: hidden;
+                }
+                .unfold {
+                    position: absolute;
+                    right: 0;
+                    top: 130px;
+                    color: #55adff;
+                    font-size: 12px;
                 }
             }
         }
@@ -368,6 +372,9 @@ body {
         .contacts {
             .email {
                 margin: 18px 0;
+                a {
+                    color: #4a4a4a;
+                }
             }
             .icon {
                 width: 14px;

@@ -130,6 +130,10 @@ i.icon {
     background-image: url(/assets/pic/iconitjuzi.png); }
   i.icon.iconqixinbao {
     background-image: url(/assets/pic/iconqixinbao.png); }
+  i.icon.focus-normal {
+    background-image: url(/assets/pic/iconfocus_normal@2x.png); }
+  i.icon.focus-active {
+    background-image: url(/assets/pic/iconfocus_active@2x.png); }
 
 .main-content .slogan {
   width: 100%;
@@ -146,7 +150,7 @@ i.icon {
   margin: auto; }
 
 .main-content .category {
-  padding: 22px 50px;
+  padding: 22px 50px 35px;
   margin-bottom: 20px;
   background: #fff; }
   .main-content .category .main-cate .item {
@@ -167,14 +171,12 @@ i.icon {
     height: 40px;
     line-height: 40px;
     position: relative;
-    overflow: hidden;
     border: 1px solid #ccc;
     text-align: center;
     font-size: 14px;
     cursor: pointer; }
-    .main-content .category .main-cate-order:hover {
-      overflow: visible; }
     .main-content .category .main-cate-order .order-types {
+      display: none;
       margin-left: -1px;
       margin-top: 10px;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
@@ -188,6 +190,9 @@ i.icon {
         text-align: center;
         font-size: 14px;
         cursor: pointer; }
+        .main-content .category .main-cate-order .order-types .item:hover {
+          color: #fff;
+          background: #459ff3; }
   .main-content .category .secondary-cate .secondary-name {
     margin-top: 3px; }
   .main-content .category .secondary-cate .secondary-cate-list li,
@@ -197,7 +202,8 @@ i.icon {
     padding: 0 12px;
     color: #4a4a4a;
     margin-right: 15px;
-    margin-bottom: 7px; }
+    margin-bottom: 7px;
+    cursor: pointer; }
     .main-content .category .secondary-cate .secondary-cate-list li.active,
     .main-content .category .secondary-cate .sec-cate-son-list li.active {
       background: #459ff3;
@@ -220,7 +226,8 @@ i.icon {
       padding: 0 30px;
       margin-right: 20px;
       background: #459ff3;
-      color: #fff; }
+      color: #fff;
+      cursor: pointer; }
       .main-content .category .secondary-cate .selected-cate .sel-item i {
         position: absolute;
         right: 12px;
@@ -253,6 +260,7 @@ i.icon {
     .main-content .project-item .proj-desc .basic-info {
       margin-bottom: 13px; }
       .main-content .project-item .proj-desc .basic-info .p-name {
+        color: #4a4a4a;
         margin-right: 20px;
         font-size: 22px; }
       .main-content .project-item .proj-desc .basic-info .p-area {
@@ -264,6 +272,10 @@ i.icon {
         position: relative;
         top: 5px;
         margin-right: 15px; }
+        .main-content .project-item .proj-desc .basic-info .p-social .wx-qrcode {
+          position: absolute;
+          top: -47px;
+          left: -14px; }
         .main-content .project-item .proj-desc .basic-info .p-social .wechat {
           margin-right: 10px; }
       .main-content .project-item .proj-desc .basic-info .p-media {
@@ -317,22 +329,108 @@ i.icon {
         border-color: #49a1f3;
         box-shadow: 0 0 3px 0 #49a1f3;
         background: #fff; }
+      .main-content .project-item .proj-after .btn.operate.active {
+        color: #fff;
+        background-color: #49a1f3;
+        border-color: #49a1f3; }
       .main-content .project-item .proj-after .btn.favor {
+        position: relative;
         width: 86px;
         margin-right: 0;
         border: 0 none;
         background: #feb235;
-        color: #fff; }
-        .main-content .project-item .proj-after .btn.favor .icon {
-          position: relative;
-          top: 4px;
-          right: 3px; }
+        cursor: pointer; }
+        .main-content .project-item .proj-after .btn.favor .collect-btn {
+          color: #fff; }
+          .main-content .project-item .proj-after .btn.favor .collect-btn .icon {
+            position: relative;
+            top: 4px;
+            right: 3px; }
+        .main-content .project-item .proj-after .btn.favor .my-roads {
+          position: absolute;
+          right: 0;
+          top: 50px;
+          width: 228px;
+          border-radius: 5px;
+          background-color: #fff;
+          box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.2);
+          border: solid 1px #ececec;
+          font-size: 12px;
+          text-align: left;
+          z-index: 10; }
+          .main-content .project-item .proj-after .btn.favor .my-roads .arrow {
+            position: absolute;
+            background: #FFFFFF;
+            border: 1px solid #ececec;
+            right: 15px;
+            top: -1px; }
+          .main-content .project-item .proj-after .btn.favor .my-roads .arrow:after,
+          .main-content .project-item .proj-after .btn.favor .my-roads .arrow:before {
+            bottom: 100%;
+            right: 0;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none; }
+          .main-content .project-item .proj-after .btn.favor .my-roads .arrow:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-bottom-color: #FFFFFF;
+            border-width: 10px;
+            margin-right: 0px; }
+          .main-content .project-item .proj-after .btn.favor .my-roads .arrow:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-bottom-color: #ececec;
+            border-width: 12px;
+            margin-right: -2px; }
+          .main-content .project-item .proj-after .btn.favor .my-roads .hd {
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-bottom: 1px solid #ececec; }
+          .main-content .project-item .proj-after .btn.favor .my-roads .roads-container {
+            height: 104px;
+            overflow-y: scroll; }
+          .main-content .project-item .proj-after .btn.favor .my-roads .r-item {
+            padding-left: 18px;
+            height: 26px;
+            line-height: 26px;
+            cursor: pointer; }
+            .main-content .project-item .proj-after .btn.favor .my-roads .r-item:hover {
+              background-color: #ebf4ff; }
+          .main-content .project-item .proj-after .btn.favor .my-roads .add-new {
+            border-top: 1px solid #ececec; }
+            .main-content .project-item .proj-after .btn.favor .my-roads .add-new input {
+              border: 0 none;
+              height: 20px;
+              line-height: 20px;
+              text-indent: 18px;
+              outline: none;
+              margin-top: 5px; }
+            .main-content .project-item .proj-after .btn.favor .my-roads .add-new a {
+              width: 40px;
+              height: 20px;
+              line-height: 20px;
+              margin-top: 5px;
+              margin-right: 10px;
+              color: #4a4a4a;
+              border: 1px solid #ececec;
+              text-align: center; }
     .main-content .project-item .proj-after .see-btn {
       margin-right: 45px; }
       .main-content .project-item .proj-after .see-btn .active {
         color: #fff;
         background-color: #49a1f3;
         border-color: #49a1f3; }
+
+.main-content .project-notlogin-tips {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 14px; }
+  .main-content .project-notlogin-tips a {
+    color: #49a1f3; }
 
 .main-content .pages {
   margin: 40px 0;
@@ -536,7 +634,11 @@ button {
     background-color: #f8f8f8;
     border: 1px solid #eeeeee;
     margin-bottom: 10px;
-    text-indent: 14px; }
+    text-indent: 14px;
+    outline: none; }
+    .login-register-box .ipt:focus {
+      background: #edf6ff;
+      border-color: #459ff3; }
     .login-register-box .ipt.ipt-position {
       width: 160px; }
     .login-register-box .ipt.ipt-name {

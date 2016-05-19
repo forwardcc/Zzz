@@ -8,6 +8,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <link rel="stylesheet" href="assets/p/find/index.css">
+    <?php include('script.php'); ?>
 </head>
 <body>
 
@@ -138,277 +139,14 @@
 
         <!-- 项目列表 -->
         <div class="project-list">
-            <div class="project-item clearfix">
-                <div class="proj-img img-wrap fl">
-                    <img src="http://temp.im/140x140/f60/fff" alt="">
-                </div>
-                <div class="proj-desc">
-                    <div class="basic-info">
-                        <span class="p-name">量化派</span>
-                        <span class="p-area">北京&nbsp;&nbsp;|</span>
-                        <a href="http://ebaoyang.com.cn" class="p-url" target="_blank">http://ebaoyang.com.cn</a>
-                        <span class="p-social">
-                            <a href="" data-content=""><i class="icon wechat"></i></a>
-                            <a href="" data-content=""><i class="icon weibo"></i></a>
-                        </span>
-                        <div class="p-media dib">
-                            <a href="" target="_blank">
-                                <i class="icon lagou"></i>
-                            </a>
-                            <a href="" target="_blank">
-                                <i class="icon kr"></i>
-                            </a>
-                            <a href="" target="_blank">
-                                <i class="icon iconitjuzi"></i>
-                            </a>
-                            <a href="" target="_blank">
-                                <i class="icon iconqixinbao"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="p-tag">
-                        <div class="tag-group">
-                            <span class="tag-type fl">行业标签</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">大数据</span>
-                                <span class="t-name dib">信用及征信</span>
-                                <span class="t-name dib">金融</span>
-                            </div>
-                        </div>
-                        <div class="tag-group">
-                            <span class="tag-type fl">团队标签</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">Capital One</span>
-                                <span class="t-name dib">Google</span>
-                                <span class="t-name dib">高盛</span>
-                                <span class="t-name dib">百度</span>
-                                <span class="t-name dib">腾讯</span>
-                            </div>
-                        </div>
-                        <div class="tag-group">
-                            <span class="tag-type fl">融资标签</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">在融资</span>
-                                <span class="t-name dib">天使轮</span>
-                                <span class="t-name dib">A轮</span>
-                                <span class="t-name dib">华创资本</span>
-                                <span class="t-name dib">王刚天使投资人</span>
-                                <span class="t-name dib">梅花天使</span>
-                                <span class="t-name dib">创新工场</span>
-                            </div>
-                        </div>
-                        <div class="tag-group">
-                            <span class="tag-type fl">所在赛道</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">商业地产领域的“爱屋及乌”</span>
-                                <span class="t-name dib">从设计师的角度切入的家装平台</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-introduce">
-                        京东金融依托京东电商平台十年来积累起来的交易数据记录和信用体系，致力于服务京东全产业链，向企业和消费者，提供融资、理财、支付等各类互联网金融服务。公司日前获得66.5亿元A轮投资。由红杉资本中国基金、嘉实投资和中国太平领投，估值为466.5亿元。公司日前获得红杉66.5亿元A轮投资。由红杉资本中国基金。
-                    </div>
-                </div>
-
-                <div class="proj-after">
-                    <span class="after-txt">
-                        项目后续跟进
-                    </span>
-                    <div class="see-btn dib">
-                        <a href="" class="btn dib active">没见过</a>
-                        <a href="" class="btn dib">见过</a>
-                    </div>
-                    <a href="" class="btn dib operate">优先跟进</a>
-                    <a href="" class="btn dib operate">需要跟进</a>
-                    <a href="" class="btn dib operate">关注可能机会</a>
-                    <a href="" class="btn dib operate">暂不关注</a>
-                    <a href="" class="btn fr favor"><i class="icon collect"></i>收藏</a>
-                </div>
-            </div>
-
-            <div class="project-item clearfix">
-                <div class="proj-img img-wrap fl">
-                    <img src="http://temp.im/140x140/f60/fff" alt="">
-                </div>
-                <div class="proj-desc">
-                    <div class="basic-info">
-                        <span class="p-name">量化派</span>
-                        <span class="p-area">北京&nbsp;&nbsp;|</span>
-                        <a href="http://ebaoyang.com.cn" class="p-url" target="_blank">http://ebaoyang.com.cn</a>
-                        <span class="p-social">
-                            <a href="" data-content=""><i class="icon wechat"></i></a>
-                            <a href="" data-content=""><i class="icon weibo"></i></a>
-                        </span>
-                        <div class="p-media dib">
-                            <a href="" target="_blank">
-                                <i class="icon lagou"></i>
-                            </a>
-                            <a href="" target="_blank">
-                                <i class="icon kr"></i>
-                            </a>
-                            <a href="" target="_blank">
-                                <i class="icon iconitjuzi"></i>
-                            </a>
-                            <a href="" target="_blank">
-                                <i class="icon iconqixinbao"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="p-tag">
-                        <div class="tag-group">
-                            <span class="tag-type fl">行业标签</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">大数据</span>
-                                <span class="t-name dib">信用及征信</span>
-                                <span class="t-name dib">金融</span>
-                            </div>
-                        </div>
-                        <div class="tag-group">
-                            <span class="tag-type fl">团队标签</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">Capital One</span>
-                                <span class="t-name dib">Google</span>
-                                <span class="t-name dib">高盛</span>
-                                <span class="t-name dib">百度</span>
-                                <span class="t-name dib">腾讯</span>
-                            </div>
-                        </div>
-                        <div class="tag-group">
-                            <span class="tag-type fl">融资标签</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">在融资</span>
-                                <span class="t-name dib">天使轮</span>
-                                <span class="t-name dib">A轮</span>
-                                <span class="t-name dib">华创资本</span>
-                                <span class="t-name dib">王刚天使投资人</span>
-                                <span class="t-name dib">梅花天使</span>
-                                <span class="t-name dib">创新工场</span>
-                            </div>
-                        </div>
-                        <div class="tag-group">
-                            <span class="tag-type fl">所在赛道</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">商业地产领域的“爱屋及乌”</span>
-                                <span class="t-name dib">从设计师的角度切入的家装平台</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-introduce">
-                        京东金融依托京东电商平台十年来积累起来的交易数据记录和信用体系，致力于服务京东全产业链，向企业和消费者，提供融资、理财、支付等各类互联网金融服务。公司日前获得66.5亿元A轮投资。由红杉资本中国基金、嘉实投资和中国太平领投，估值为466.5亿元。公司日前获得红杉66.5亿元A轮投资。由红杉资本中国基金。
-                    </div>
-                </div>
-
-                <div class="proj-after">
-                    <span class="after-txt">
-                        项目后续跟进
-                    </span>
-                    <div class="see-btn dib">
-                        <a href="" class="btn dib active">没见过</a>
-                        <a href="" class="btn dib">见过</a>
-                    </div>
-                    <a href="" class="btn dib operate">优先跟进</a>
-                    <a href="" class="btn dib operate">需要跟进</a>
-                    <a href="" class="btn dib operate">关注可能机会</a>
-                    <a href="" class="btn dib operate">暂不关注</a>
-                    <a href="" class="btn fr favor"><i class="icon collect"></i>收藏</a>
-                </div>
-            </div>
-
-            <div class="project-item clearfix">
-                <div class="proj-img img-wrap fl">
-                    <img src="http://temp.im/140x140/f60/fff" alt="">
-                </div>
-                <div class="proj-desc">
-                    <div class="basic-info">
-                        <span class="p-name">量化派</span>
-                        <span class="p-area">北京&nbsp;&nbsp;|</span>
-                        <a href="http://ebaoyang.com.cn" class="p-url" target="_blank">http://ebaoyang.com.cn</a>
-                        <span class="p-social">
-                            <a href="" data-content=""><i class="icon wechat"></i></a>
-                            <a href="" data-content=""><i class="icon weibo"></i></a>
-                        </span>
-                        <div class="p-media dib">
-                            <a href="" target="_blank">
-                                <i class="icon lagou"></i>
-                            </a>
-                            <a href="" target="_blank">
-                                <i class="icon kr"></i>
-                            </a>
-                            <a href="" target="_blank">
-                                <i class="icon iconitjuzi"></i>
-                            </a>
-                            <a href="" target="_blank">
-                                <i class="icon iconqixinbao"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="p-tag">
-                        <div class="tag-group">
-                            <span class="tag-type fl">行业标签</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">大数据</span>
-                                <span class="t-name dib">信用及征信</span>
-                                <span class="t-name dib">金融</span>
-                            </div>
-                        </div>
-                        <div class="tag-group">
-                            <span class="tag-type fl">团队标签</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">Capital One</span>
-                                <span class="t-name dib">Google</span>
-                                <span class="t-name dib">高盛</span>
-                                <span class="t-name dib">百度</span>
-                                <span class="t-name dib">腾讯</span>
-                            </div>
-                        </div>
-                        <div class="tag-group">
-                            <span class="tag-type fl">融资标签</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">在融资</span>
-                                <span class="t-name dib">天使轮</span>
-                                <span class="t-name dib">A轮</span>
-                                <span class="t-name dib">华创资本</span>
-                                <span class="t-name dib">王刚天使投资人</span>
-                                <span class="t-name dib">梅花天使</span>
-                                <span class="t-name dib">创新工场</span>
-                            </div>
-                        </div>
-                        <div class="tag-group">
-                            <span class="tag-type fl">所在赛道</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">商业地产领域的“爱屋及乌”</span>
-                                <span class="t-name dib">从设计师的角度切入的家装平台</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-introduce">
-                        京东金融依托京东电商平台十年来积累起来的交易数据记录和信用体系，致力于服务京东全产业链，向企业和消费者，提供融资、理财、支付等各类互联网金融服务。公司日前获得66.5亿元A轮投资。由红杉资本中国基金、嘉实投资和中国太平领投，估值为466.5亿元。公司日前获得红杉66.5亿元A轮投资。由红杉资本中国基金。
-                    </div>
-                </div>
-
-                <div class="proj-after">
-                    <span class="after-txt">
-                        项目后续跟进
-                    </span>
-                    <div class="see-btn dib">
-                        <a href="" class="btn dib active">没见过</a>
-                        <a href="" class="btn dib">见过</a>
-                    </div>
-                    <a href="" class="btn dib operate">优先跟进</a>
-                    <a href="" class="btn dib operate">需要跟进</a>
-                    <a href="" class="btn dib operate">关注可能机会</a>
-                    <a href="" class="btn dib operate">暂不关注</a>
-                    <a href="" class="btn fr favor"><i class="icon collect"></i>收藏</a>
-                </div>
-            </div>
+            <?php 
+            for ($x=0; $x<3; $x++) {
+              include('project_item.html');
+            } 
+            ?>
         </div>
 
+        <?php if(isset($_GET['login']) && $_GET['login']==1){?>
         <!-- 分页 -->
         <div class="pages">
             <a href="" class="page prev disable"><<</a>
@@ -420,12 +158,19 @@
             <a href="" class="page">6</a>
             <a href="" class="page next">>></a>
         </div>
+        <?php }else{?>
+        <p class="project-notlogin-tips">呈现15个周一更新的企业，查看更多请<a href="reigister.php">注册</a></p>
+        <?php } ?>
     </div>
 </div>
 
 
 
 <?php include('footer.php'); ?>
+
+<script>
+    seajs.use('p/manage/index.js');
+</script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 define(function(require) {
     require('slick');
+    require('project');
 
     var page = {
         init: function(){
@@ -7,6 +8,11 @@ define(function(require) {
             this.slick();
         },
         events: function(){
+            $('.J_UnfoldDesc').on('click', function(e){
+                e.preventDefault();
+                $(this).siblings('.c-desc').css({'overflow': 'visible', 'height':'auto'});
+                $(this).hide();
+            })
             $('.other-tab-hd .hd-item').each(function(idx,item){
                 $(item).on('click', function(){
                     $('.other-tab-hd .hd-item').removeClass('active');

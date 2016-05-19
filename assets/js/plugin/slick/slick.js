@@ -1,3 +1,7 @@
+define(function(require) {
+    require('plugin/slick/slick.css');
+    require('plugin/slick/slick-theme.css');
+});
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___

@@ -126,6 +126,11 @@ button {
 		border: 1px solid #eeeeee;
 		margin-bottom: 10px;
 		text-indent: 14px;
+		outline: none;
+		&:focus {
+			background: #edf6ff;
+    		border-color: #459ff3;
+		}
 		&.ipt-position {
 			width: 160px;
 		}

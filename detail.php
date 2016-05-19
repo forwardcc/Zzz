@@ -27,8 +27,9 @@
                         <span class="p-area">北京&nbsp;&nbsp;|</span>
                         <a href="http://ebaoyang.com.cn" class="p-url" target="_blank">http://ebaoyang.com.cn</a>
                         <span class="p-social">
-                            <a href="" data-content=""><i class="icon wechat"></i></a>
-                            <a href="" data-content=""><i class="icon weibo"></i></a>
+                            <img src="http://temp.im/40x40/f60/fff" class="hide wx-qrcode">
+                            <a href="javascript:;" class="J_WechatQrcode"><i class="icon wechat"></i></a>
+                            <a href="" ><i class="icon weibo"></i></a>
                         </span>
                         <div class="p-media dib">
                             <a href="" target="_blank">
@@ -99,11 +100,32 @@
                         <a href="" class="btn dib active">没见过</a>
                         <a href="" class="btn dib">见过</a>
                     </div>
-                    <a href="" class="btn dib operate">优先跟进</a>
-                    <a href="" class="btn dib operate">需要跟进</a>
-                    <a href="" class="btn dib operate">关注可能机会</a>
-                    <a href="" class="btn dib operate">暂不关注</a>
-                    <a href="" class="btn fr favor"><i class="icon collect"></i>收藏</a>
+                    <div class="J_OperateBtns dib">
+                        <a href="" class="btn dib operate">优先跟进</a>
+                        <a href="" class="btn dib operate">需要跟进</a>
+                        <a href="" class="btn dib operate">关注可能机会</a>
+                        <a href="" class="btn dib operate">暂不关注</a>
+                    </div>
+                    <div class="btn fr favor J_ProjectFavor">
+                        <a href="" class="collect-btn">
+                            <i class="icon collect"></i>收藏
+                        </a>
+                        <div class="my-roads hide">
+                            <i class="arrow"></i>
+                            <p class="hd">添加到我的赛道</p>
+                            <div class="roads-container">
+                                <p class="r-item">互联网家装公司赛道</p>
+                                <p class="r-item">大学生分期赛道</p>
+                                <p class="r-item">租房分期赛道</p>
+                                <p class="r-item">一个教育分期的赛道</p>
+                            </div>
+                            <div class="add-new">
+                                <input type="text" class="dib" placeholder="输入新建赛道名称">
+                                <a href="" class="J_AddNewRoad fr">添加</a>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
 
@@ -117,8 +139,9 @@
                     </div>
                     <div class="c-desc ">
                         京东金融依托京东电商平台十年来积累起来的交易数据记录和信用体系，致力于服务京东全产业链，向企业和消费者，提供融资、理财、支付等各类互联网金融服务。公司日前获得66.5亿元A轮投资。由红杉资本中国基金、嘉实投资和中国太平领投，估值为466.5亿元。公司日前获得红杉66.5亿元A轮投资。由红杉资本中国基金。
-                        <a href="#" class="unfold">展开</a>
+                        京东金融依托京东电商平台十年来积累起来的交易数据记录和信用体系，致力于服务京东全产业链，向企业和消费者，提供融资、理财、支付等各类互联网金融服务。公司日前获得66.5亿元A轮投资。由红杉资本中国基金、嘉实投资和中国太平领投，估值为466.5亿元。公司日前获得红杉66.5亿元A轮投资。由红杉资本中国基金。
                     </div>
+                    <a href="#" class="unfold J_UnfoldDesc">展开</a>
                 </div>  
             </div>
 
@@ -310,7 +333,7 @@
             <div class="card contacts">
                 <p class="card-hd">联系方式</p>
                 <p class="phone"><i class="icon tel"></i>010-89099999</p>
-                <p class="email"><i class="icon mail"></i>lianghuapai@foxmail.com</p>
+                <p class="email"><i class="icon mail"></i><a href="mailto:lianghuapai@foxmail.com">lianghuapai@foxmail.com</a></p>
                 <p class="address"><i class="icon location"></i>杭州市西湖区西溪新座5幢609室</p>
             </div>
 
@@ -338,10 +361,10 @@
 </div>
 
 
+<?php include('footer.php'); ?>
 <script>
     seajs.use('p/detail/index.js');
 </script>
-<?php include('footer.php'); ?>
 </body>
 
 </html>

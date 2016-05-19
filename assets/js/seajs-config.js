@@ -7,6 +7,8 @@ seajs.config({
     },
     alias: {
         jquery: 'js/jquery.min.js',
-        slick: 'js/slick.js'
+        headerTab: 'js/module/header-tab.js',
+        project: 'js/module/project.js',
+        slick: 'js/plugin/slick/slick.js'
     }
 });

@@ -17,6 +17,10 @@ body {
             }
         }
     }
+
+    .project-list {
+        margin-bottom: 50px;
+    }
     
     // mini 赛道
     .mini-roads {
@@ -48,6 +52,7 @@ body {
                 margin-right: 10px;
                 border: 1px solid #ececec;
                 background-color: #fff;
+                &.active,
                 &:hover {
                     box-shadow: 1px 1px 10px 2px $backBlue;
                 }
@@ -87,6 +92,10 @@ body {
                         &.favor {
                             width: 146px;
                             border-right: 1px solid #ececec; 
+                            .icon {
+                                margin-right: 5px;
+                                vertical-align: middle;
+                            }
                         }
                     }
                 }
