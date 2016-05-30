@@ -137,10 +137,10 @@ i.icon {
 
 .main-content .slogan {
   width: 100%;
-  height: 105px;
-  padding-top: 40px;
+  height: 80px;
+  padding-top: 20px;
   text-align: center;
-  font-size: 28px;
+  font-size: 22px;
   color: #fff;
   background: #474747 url(/assets/pic/imagebg@2x.png) no-repeat center center;
   background-size: cover; }
@@ -150,30 +150,30 @@ i.icon {
   margin: auto; }
 
 .main-content .category {
-  padding: 22px 50px 35px;
-  margin-bottom: 20px;
+  padding: 22px 50px 24px;
+  margin-bottom: 10px;
   background: #fff; }
   .main-content .category .main-cate .item {
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    margin-right: 10px;
+    width: 80px;
+    height: 34px;
+    line-height: 34px;
+    margin-right: 8px;
     border: 1px solid #ccc;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer; }
     .main-content .category .main-cate .item.active {
       color: #fff;
       background: #459ff3;
       border-color: #459ff3; }
   .main-content .category .main-cate-order {
-    width: 160px;
-    height: 40px;
-    line-height: 40px;
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
     position: relative;
     border: 1px solid #ccc;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer; }
     .main-content .category .main-cate-order .order-types {
       display: none;
@@ -182,13 +182,13 @@ i.icon {
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
       background: #fff; }
       .main-content .category .main-cate-order .order-types .item {
-        width: 160px;
-        height: 40px;
-        line-height: 40px;
+        width: 120px;
+        height: 34px;
+        line-height: 34px;
         border: 1px solid #ccc;
         border-bottom: 0 none;
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
         cursor: pointer; }
         .main-content .category .main-cate-order .order-types .item:hover {
           color: #fff;
@@ -197,8 +197,8 @@ i.icon {
     margin-top: 3px; }
   .main-content .category .secondary-cate .secondary-cate-list li,
   .main-content .category .secondary-cate .sec-cate-son-list li {
-    height: 26px;
-    line-height: 26px;
+    height: 22px;
+    line-height: 22px;
     padding: 0 12px;
     color: #4a4a4a;
     margin-right: 15px;
@@ -223,8 +223,8 @@ i.icon {
       position: relative;
       height: 26px;
       line-height: 26px;
-      padding: 0 30px;
-      margin-right: 20px;
+      padding: 0 24px;
+      margin-right: 8px;
       background: #459ff3;
       color: #fff;
       cursor: pointer; }
@@ -242,7 +242,7 @@ i.icon {
       border: 1px solid #eeeeee; }
 
 .main-content .project-item {
-  padding-top: 52px;
+  padding-top: 30px;
   margin-bottom: 10px;
   background: #fff;
   border: solid 1px #ececec;
@@ -258,7 +258,7 @@ i.icon {
     margin-bottom: 20px;
     padding-right: 60px; }
     .main-content .project-item .proj-desc .basic-info {
-      margin-bottom: 13px; }
+      margin-bottom: 8px; }
       .main-content .project-item .proj-desc .basic-info .p-name {
         color: #4a4a4a;
         margin-right: 20px;
@@ -287,26 +287,28 @@ i.icon {
     .main-content .project-item .proj-desc .p-tag .tag-type {
       position: relative;
       top: 4px;
-      color: #9b9b9b; }
+      color: #9b9b9b;
+      font-size: 13px; }
     .main-content .project-item .proj-desc .p-tag .tag-list {
       margin-left: 75px;
       font-size: 0; }
       .main-content .project-item .proj-desc .p-tag .tag-list .t-name {
         height: 24px;
         line-height: 24px;
-        padding: 0 8px;
-        margin-right: 15px;
-        margin-bottom: 15px;
+        padding: 0 6px;
+        margin-right: 10px;
+        margin-bottom: 10px;
         border: solid 1px #ccc;
-        font-size: 14px; }
+        font-size: 13px; }
     .main-content .project-item .proj-desc .p-introduce {
-      padding: 18px;
+      padding: 12px;
       background-color: #f9fafa;
-      border: 1px solid #ededed; }
+      border: 1px solid #ededed;
+      font-size: 13px; }
   .main-content .project-item .proj-after {
     position: relative;
-    height: 53px;
-    padding-top: 13px;
+    height: 40px;
+    padding-top: 10px;
     padding-right: 60px;
     background-color: #fafafa;
     font-size: 0;
@@ -315,9 +317,9 @@ i.icon {
       margin-left: 220px;
       font-size: 14px; }
     .main-content .project-item .proj-after .btn {
-      width: 98px;
-      height: 36px;
-      line-height: 36px;
+      width: 94px;
+      height: 30px;
+      line-height: 30px;
       margin-right: 10px;
       border-radius: 32px;
       text-align: center;
@@ -418,7 +420,14 @@ i.icon {
               border: 1px solid #ececec;
               text-align: center; }
     .main-content .project-item .proj-after .see-btn {
-      margin-right: 45px; }
+      margin-right: 90px; }
+      .main-content .project-item .proj-after .see-btn .btn {
+        width: 90px; }
+        .main-content .project-item .proj-after .see-btn .btn:hover {
+          color: #49a1f3;
+          border-color: #49a1f3;
+          box-shadow: 0 0 3px 0 #49a1f3;
+          background: #fff; }
       .main-content .project-item .proj-after .see-btn .active {
         color: #fff;
         background-color: #49a1f3;
@@ -547,6 +556,18 @@ body {
   .main-content .detail-left {
     width: 900px;
     margin-right: 20px; }
+    .main-content .detail-left .project-item .p-name .products {
+      font-size: 12px; }
+      .main-content .detail-left .project-item .p-name .products a {
+        color: #49a1f3; }
+    .main-content .detail-left .project-item .p-intro {
+      position: relative; }
+      .main-content .detail-left .project-item .p-intro span {
+        position: absolute;
+        color: #9b9b9b;
+        font-size: 13px; }
+      .main-content .detail-left .project-item .p-intro .p-introduce {
+        margin-left: 75px; }
     .main-content .detail-left .project-item .proj-after {
       padding-right: 20px; }
       .main-content .detail-left .project-item .proj-after .after-txt {
@@ -717,56 +738,65 @@ body {
           top: 60px; }
         .main-content .detail-left .company-product .c-pro-item.only-link:hover {
           background: #fafafa; }
-    .main-content .detail-left .other-info {
-      padding: 20px 36px;
+    .main-content .detail-left .timeline-info {
       color: #4a4a4a; }
-      .main-content .detail-left .other-info .other-tab-hd {
-        margin-bottom: 24px; }
-        .main-content .detail-left .other-info .other-tab-hd .hd-item {
-          width: 107px;
-          line-height: 36px;
-          text-align: center;
-          border: solid 1px #ececec;
-          cursor: pointer; }
-          .main-content .detail-left .other-info .other-tab-hd .hd-item:nth-child(2) {
-            border-right: 0 none;
-            border-left: 0 none; }
-          .main-content .detail-left .other-info .other-tab-hd .hd-item.active {
-            border-color: #57a8f4;
-            color: #fff;
-            background-color: #57a8f4; }
-      .main-content .detail-left .other-info .other-tab-bd .bd-item {
-        display: none; }
-        .main-content .detail-left .other-info .other-tab-bd .bd-item.active {
-          display: block; }
-        .main-content .detail-left .other-info .other-tab-bd .bd-item .info-item {
-          position: relative;
-          padding-bottom: 48px;
-          margin-left: 18px;
-          padding-left: 22px;
-          border-left: 1px solid #f0f0f0; }
-          .main-content .detail-left .other-info .other-tab-bd .bd-item .info-item:before {
-            position: absolute;
-            top: 7px;
-            left: -4px;
-            content: '';
-            width: 8px;
-            height: 8px;
-            background-color: #459ff3;
-            border-radius: 8px;
-            box-shadow: 0px 0px 0 2px #f5f5f5; }
-          .main-content .detail-left .other-info .other-tab-bd .bd-item .info-item:first-child:before {
-            top: 22px; }
-          .main-content .detail-left .other-info .other-tab-bd .bd-item .info-item:last-child {
-            padding-bottom: 24px; }
-          .main-content .detail-left .other-info .other-tab-bd .bd-item .info-item p {
-            font-size: 14px; }
-            .main-content .detail-left .other-info .other-tab-bd .bd-item .info-item p .icon {
-              position: relative;
-              top: 3px; }
-          .main-content .detail-left .other-info .other-tab-bd .bd-item .info-item .date {
-            font-size: 12px;
-            color: #9b9b9b; }
+      .main-content .detail-left .timeline-info .bd {
+        padding-bottom: 64px; }
+      .main-content .detail-left .timeline-info .info-item {
+        position: relative;
+        padding-bottom: 48px;
+        margin-left: 125px;
+        padding-left: 22px;
+        padding-right: 56px;
+        border-left: 1px solid #f0f0f0; }
+        .main-content .detail-left .timeline-info .info-item:before {
+          position: absolute;
+          top: 7px;
+          left: -4px;
+          content: '';
+          width: 8px;
+          height: 8px;
+          background-color: #459ff3;
+          border-radius: 8px;
+          box-shadow: 0px 0px 0 2px #f5f5f5; }
+        .main-content .detail-left .timeline-info .info-item:first-child:before {
+          top: 22px; }
+        .main-content .detail-left .timeline-info .info-item:last-child {
+          padding-bottom: 24px; }
+        .main-content .detail-left .timeline-info .info-item .title {
+          font-size: 14px; }
+          .main-content .detail-left .timeline-info .info-item .title .icon {
+            position: relative;
+            top: 3px; }
+        .main-content .detail-left .timeline-info .info-item .desc {
+          font-size: 12px;
+          color: #878787; }
+        .main-content .detail-left .timeline-info .info-item .date {
+          position: absolute;
+          left: -77px;
+          top: 3px;
+          font-size: 14px;
+          color: #4a4a4a; }
+        .main-content .detail-left .timeline-info .info-item:first-child .title {
+          padding-top: 16px; }
+        .main-content .detail-left .timeline-info .info-item:first-child .date {
+          top: 18px; }
+      .main-content .detail-left .timeline-info.news .info-bg:hover {
+        background: #fafafa; }
+      .main-content .detail-left .timeline-info.news .info-item .date {
+        font-size: 12px;
+        position: static;
+        color: #9b9b9b; }
+      .main-content .detail-left .timeline-info.news .info-item .tag {
+        padding: 2px 5px;
+        line-height: 1;
+        font-size: 12px;
+        color: #9b9b9b;
+        border: solid 1px #ececec; }
+      .main-content .detail-left .timeline-info.news .info-item .news-link {
+        margin-top: 14px;
+        font-size: 12px;
+        color: #9b9b9b; }
   .main-content .detail-right {
     width: 260px; }
     .main-content .detail-right .card {

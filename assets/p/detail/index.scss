@@ -25,10 +25,30 @@ body {
             text-indent: 9px;
         }
     }
+    // 公司详情
     .detail-left {
         width: 900px;
         margin-right: 20px;
         .project-item {
+            .p-name {
+                .products {
+                    font-size: 12px;
+                    a {
+                        color: #49a1f3;
+                    }
+                }
+            }
+            .p-intro {
+                position: relative;
+                span {
+                    position: absolute;
+                    color: #9b9b9b;
+                    font-size: 13px;
+                }
+                .p-introduce {
+                    margin-left: 75px;
+                }
+            }
             .proj-after {
                 padding-right: 20px;
                 .after-txt {
@@ -256,69 +276,83 @@ body {
             }
         }
 
-        .other-info {
-            padding: 20px 36px;
+        .timeline-info {
             color: $textColor;
-            .other-tab-hd {
-                margin-bottom: 24px;
-                .hd-item {
-                    width: 107px;
-                    line-height: 36px;
-                    text-align: center;
-                    border: solid 1px #ececec;
-                    cursor: pointer;
-                    &:nth-child(2) {
-                        border-right: 0 none;
-                        border-left: 0 none;
+            .bd {
+                padding-bottom: 64px;
+            }
+            .info-item {
+                position: relative;
+                padding-bottom: 48px;
+                margin-left: 125px;
+                padding-left: 22px;
+                padding-right: 56px;
+                border-left: 1px solid #f0f0f0;
+                &:before {
+                    position: absolute;
+                    top: 7px;
+                    left: -4px;
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    background-color: #459ff3;
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 0 2px #f5f5f5;
+                }
+                &:first-child:before {
+                    top: 22px;
+                }
+                &:last-child {
+                    padding-bottom: 24px;
+                }
+                .title {
+                    font-size: 14px;
+                    .icon {
+                        position: relative;
+                        top: 3px;
                     }
-                    &.active {
-                        border-color: #57a8f4;
-                        color: #fff;
-                        background-color: #57a8f4;
+                }
+                .desc {
+                    font-size: 12px;
+                    color: #878787;
+                }
+                .date {
+                    position: absolute;
+                    left: -77px;
+                    top: 3px;
+                    font-size: 14px;
+                    color: $textColor;
+                }
+                &:first-child {
+                    .title {
+                        padding-top: 16px;
+                    }
+                    .date {
+                        top: 18px;
                     }
                 }
             }
-            .other-tab-bd {
-                .bd-item {
-                    display: none;
-                    &.active {
-                        display: block;
+            &.news {
+                .info-bg:hover {
+                    background: #fafafa;
+                }
+                .info-item {
+                    .date {
+                        font-size: 12px;
+                        position: static;
+                        color: #9b9b9b;
                     }
-                    
-                    .info-item {
-                        position: relative;
-                        padding-bottom: 48px;
-                        margin-left: 18px;
-                        padding-left: 22px;
-                        border-left: 1px solid #f0f0f0;
-                        &:before {
-                            position: absolute;
-                            top: 7px;
-                            left: -4px;
-                            content: '';
-                            width: 8px;
-                            height: 8px;
-                            background-color: #459ff3;
-                            border-radius: 8px;
-                            box-shadow: 0px 0px 0 2px #f5f5f5;
-                        }
-                        &:first-child:before {
-                            top: 22px;
-                        }
-                        &:last-child {
-                            padding-bottom: 24px;
-                        }
-                        p {
-                            font-size: 14px;
-                            .icon {
-                                position: relative;
-                                top: 3px;
-                            }
-                        }
-                        .date {
-                            font-size: 12px;
-                            color: #9b9b9b;
-                        }
+                    .tag {
+                        padding: 2px 5px;
+                        line-height: 1;
+                        font-size: 12px;
+                        color: #9b9b9b;
+                        border: solid 1px #ececec;
+                    }
+                    .news-link {
+                        margin-top: 14px;
+                        font-size: 12px;
+                        color: #9b9b9b;
                     }
                 }
             }

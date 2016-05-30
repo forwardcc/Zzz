@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>项目详情</title>
+    <title>公司详情</title>
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
     <link rel="stylesheet" href="assets/p/detail/index.css">
     <?php include('script.php'); ?>
@@ -23,7 +23,15 @@
                 </div>
                 <div class="proj-desc">
                     <div class="basic-info">
-                        <span class="p-name">量化派</span>
+                        <p class="p-name">
+                            量化派
+                            <span class="products">
+                                所属公司旗下产品：
+                                <a href="detail-2.php" target="_blank">量科邦</a>
+                                <a href="detail-3.php" target="_blank">小咖秀</a>
+                                <a href="detail-4.php" target="_blank">秒拍</a>
+                            </span>
+                        </p>
                         <span class="p-area">北京&nbsp;&nbsp;|</span>
                         <a href="http://ebaoyang.com.cn" class="p-url" target="_blank">http://ebaoyang.com.cn</a>
                         <span class="p-social">
@@ -56,28 +64,7 @@
                                 <span class="t-name dib">金融</span>
                             </div>
                         </div>
-                        <div class="tag-group">
-                            <span class="tag-type fl">团队标签</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">Capital One</span>
-                                <span class="t-name dib">Google</span>
-                                <span class="t-name dib">高盛</span>
-                                <span class="t-name dib">百度</span>
-                                <span class="t-name dib">腾讯</span>
-                            </div>
-                        </div>
-                        <div class="tag-group">
-                            <span class="tag-type fl">融资标签</span>
-                            <div class="tag-list">
-                                <span class="t-name dib">在融资</span>
-                                <span class="t-name dib">天使轮</span>
-                                <span class="t-name dib">A轮</span>
-                                <span class="t-name dib">华创资本</span>
-                                <span class="t-name dib">王刚天使投资人</span>
-                                <span class="t-name dib">梅花天使</span>
-                                <span class="t-name dib">创新工场</span>
-                            </div>
-                        </div>
+                        
                         <div class="tag-group">
                             <span class="tag-type fl">所在赛道</span>
                             <div class="tag-list">
@@ -86,9 +73,13 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="p-introduce">
-                        京东金融依托京东电商平台十年来积累起来的交易数据记录和信用体系，致力于服务京东全产业链，向企业和消费者，提供融资、理财、支付等各类互联网金融服务。公司日前获得66.5亿元A轮投资。由红杉资本中国基金、嘉实投资和中国太平领投，估值为466.5亿元。公司日前获得红杉66.5亿元A轮投资。由红杉资本中国基金。
+                    
+                    
+                    <div class="p-intro clearfix">
+                        <span>产品简介</span>
+                        <p class="p-introduce">
+                            京东金融依托京东电商平台十年来积累起来的交易数据记录和信用体系，致力于服务京东全产业链，向企业和消费者，提供融资、理财、支付等各类互联网金融服务。公司日前获得66.5亿元A轮投资。由红杉资本中国基金、嘉实投资和中国太平领投，估值为466.5亿元。公司日前获得红杉66.5亿元A轮投资。由红杉资本中国基金。
+                        </p>
                     </div>
                 </div>
 
@@ -213,19 +204,31 @@
                             </p>
                         </div>
                     </li>
-                    <li class="c-pro-item with-pic clearfix last">
+                    <li class="c-pro-item with-pic clearfix">
                         <div class="p-pic fl">
                             <img src="http://temp.im/240x130/f60/fff">
                         </div>
                         <div class="p-info">
-                            <span class="p-name">量化派</span>
+                            <span class="p-name">秒拍</span>
                             <i class="icon link"></i>
                             <p class="p-intro">
                                 上海绚威网络科技有限公司，成立于2015年，以坚实的移动互联网技术服务为基础，用全面创新的“Sensor 生态圈”涵盖都市时尚人群晚8点至早8点的出行娱乐消费，缔造前所未有的娱乐出行新体验；现公司旗下移动社交产品“Sensor”已上架苹果商店，以独创的“近距离邂逅玩法”并结合其核心“价值社交”体系。
                             </p>
                         </div>
                     </li>
-                    <li class="c-pro-item only-link fl">
+                    <li class="c-pro-item with-pic clearfix last">
+                        <div class="p-pic fl">
+                            <img src="http://temp.im/240x130/f60/fff">
+                        </div>
+                        <div class="p-info">
+                            <span class="p-name">小咖秀</span>
+                            <i class="icon link"></i>
+                            <p class="p-intro">
+                                上海绚威网络科技有限公司，成立于2015年，以坚实的移动互联网技术服务为基础，用全面创新的“Sensor 生态圈”涵盖都市时尚人群晚8点至早8点的出行娱乐消费，缔造前所未有的娱乐出行新体验；现公司旗下移动社交产品“Sensor”已上架苹果商店，以独创的“近距离邂逅玩法”并结合其核心“价值社交”体系。
+                            </p>
+                        </div>
+                    </li>
+                    <!-- <li class="c-pro-item only-link fl">
                         <span class="p-type dib">网站</span>
                         <a href="" class="p-name">贝瓦网</a>
                         <p class="p-company">儿童成长门户网站</p>
@@ -248,61 +251,58 @@
                         <a href="" class="p-name">量化派</a>
                         <p class="p-company">儿童成长门户网站</p>
                         <i class="icon link"></i>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
 
 
-            <div class="card other-info">
-                <div class="other-tab-hd clearfix">
-                    <span class="hd-item fl active">发展历程</span>
-                    <span class="hd-item fl">关键事件</span>
-                    <span class="hd-item fl">新闻</span>
+            <div class="card timeline-info">
+                <p class="card-hd">发展历程</p>
+                <div class="bd">
+                    <div class="info-item">
+                        <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
+                        <span class="date">2016.2.16</span>
+                        <p class="desc">婚礼纪已经升级为整合婚礼供应链的平台。对于低频O2O怎么玩，提高效率。</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="date">2016.2.16</span>
+                        <p class="title">初版审核通过上架苹果商店，开始线下用户的反馈获取 <a href="" target="_blank"><i class="icon link"></i></a></p>
+                    </div>
+                    <div class="info-item">
+                        <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
+                        <span class="date">2016.2.16</span>
+                        <p class="desc">婚礼纪已经升级为整合婚礼供应链的平台。对于低频O2O怎么玩，提高效率，降低成本才是低频O2O发展的核心，而对于婚礼这样的高客单价O2O，盈利能力才是王道。</p>
+                    </div>
                 </div>
-                <div class="other-tab-bd">
-                    <div class="bd-item active">
-                        <div class="info-item">
-                            <p>修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
-                            <p class="date">2016.2.16</p>
-                        </div>
-                        <div class="info-item">
-                            <p>初版审核通过上架苹果商店，开始线下用户的反馈获取 <i class="icon link"></i></p>
-                            <p class="date">2016.2.16</p>
-                        </div>
-                        <div class="info-item">
-                            <p>修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
-                            <p class="date">2016.2.16</p>
-                        </div>
-                    </div>
-                    <div class="bd-item">
-                        <div class="info-item">
-                            <p>初版审核通过上架苹果商店，开始线下用户的反馈获取 <i class="icon link"></i></p>
-                            <p class="date">2016.2.16</p>
-                        </div>
-                        <div class="info-item">
-                            <p>修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
-                            <p class="date">2016.2.16</p>
-                        </div>
-                        <div class="info-item">
-                            <p>修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
-                            <p class="date">2016.2.16</p>
-                        </div>
-                    </div>
-                    <div class="bd-item">
-                        <div class="info-item">
-                            <p>修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
-                            <p class="date">2016.2.16</p>
-                        </div>
-                        <div class="info-item">
-                            <p>修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
-                            <p class="date">2016.2.16</p>
-                        </div>
-                        <div class="info-item">
-                            <p>初版审核通过上架苹果商店，开始线下用户的反馈获取 <i class="icon link"></i></p>
-                            <p class="date">2016.2.16</p>
-                        </div>
-                    </div>
+            </div>
 
+            <div class="card timeline-info news">
+                <p class="card-hd">新闻</p>
+                <div class="bd">
+                    <div class="info-bg">
+                        <div class="info-item">
+                            <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
+                            <span class="date">2016.2.16</span>
+                            <span class="tag dib">资本</span>
+                            <a href="" target="_blank" class="news-link fr">www.huxiu.com</a>
+                        </div>
+                    </div>
+                    <div class="info-bg">
+                        <div class="info-item">
+                            <p class="title">初版审核通过上架苹果商店，开始线下用户的反馈获取 <a href="" target="_blank"><i class="icon link"></i></a></p>
+                            <span class="date">2016.2.16</span>
+                            <span class="tag dib">人事变动</span>
+                            <a href="" target="_blank" class="news-link fr">www.huxiu.com</a>
+                        </div>
+                    </div>
+                    <div class="info-bg">
+                        <div class="info-item">
+                            <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
+                            <span class="date">2016.2.16</span>
+                            <span class="tag dib">内部消息</span>
+                            <a href="" target="_blank" class="news-link fr">www.huxiu.com</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             

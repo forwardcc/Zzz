@@ -16,14 +16,14 @@
     float: right;
 }
 .clearfix {
-    *zoom:1
+    *zoom: 1
 }
 .clearfix:before, .clearfix:after {
-    display:table;
-    content:""
+    display: table;
+    content: ""
 }
 .clearfix:after {
-    clear:both
+    clear: both
 }
 .hide {
     display: none;
@@ -95,10 +95,10 @@ i.icon {
 .main-content {
     .slogan {
         width: 100%;
-        height: 105px;
-        padding-top: 40px;
+        height: 80px;
+        padding-top: 20px;
         text-align: center;
-        font-size: 28px;
+        font-size: 22px;
         color: #fff;
         background: #474747 url(#{$picURL}/imagebg@2x.png) no-repeat center center;
         background-size: cover;
@@ -109,18 +109,18 @@ i.icon {
 
     // 通用的分类
     .category {
-        padding: 22px 50px 35px;
-        margin-bottom: 20px;
+        padding: 22px 50px 24px;
+        margin-bottom: 10px;
         background: #fff;
         // 主分类
         .main-cate {
             .item {
-                width: 100px;
-                @include vertical-center(40px);
-                margin-right: 10px;
+                width: 80px;
+                @include vertical-center(34px);
+                margin-right: 8px;
                 border: 1px solid #ccc;
                 text-align: center;
-                font-size: $textSize;
+                font-size: 13px;
                 cursor: pointer;
                 &.active {
                     color: #fff;
@@ -130,13 +130,13 @@ i.icon {
             }
         }
         .main-cate-order {
-            width: 160px;
-            @include vertical-center(40px);
+            width: 120px;
+            @include vertical-center(34px);
             position: relative;
             // overflow: hidden;
             border: 1px solid #ccc;
             text-align: center;
-            font-size: $textSize;
+            font-size: 13px;
             cursor: pointer;
             // &:hover {
             //     overflow: visible;
@@ -148,12 +148,12 @@ i.icon {
                 box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
                 background: #fff;
                 .item {
-                    width: 160px;
-                    @include vertical-center(40px);
+                    width: 120px;
+                    @include vertical-center(34px);
                     border: 1px solid #ccc;
                     border-bottom: 0 none;
                     text-align: center;
-                    font-size: $textSize;
+                    font-size: 13px;
                     cursor: pointer;
                     &:hover {
                         color: #fff;
@@ -171,7 +171,7 @@ i.icon {
             .secondary-cate-list,
             .sec-cate-son-list {
                 li {
-                    @include vertical-center(26px);
+                    @include vertical-center(22px);
                     padding: 0 12px;
                     color: $textColor;
                     margin-right: 15px;
@@ -199,8 +199,8 @@ i.icon {
                 .sel-item {
                     position: relative;
                     @include vertical-center(26px);
-                    padding: 0 30px;
-                    margin-right: 20px;
+                    padding: 0 24px;
+                    margin-right: 8px;
                     background: $backBlue;
                     color: #fff;
                     cursor: pointer;
@@ -224,7 +224,7 @@ i.icon {
 
     // 通用项目列表
     .project-item {
-        padding-top: 52px;
+        padding-top: 30px;
         margin-bottom: 10px;
         background: #fff;
         border: solid 1px #ececec;
@@ -241,7 +241,7 @@ i.icon {
             margin-bottom: 20px;
             padding-right: 60px;
             .basic-info {
-                margin-bottom: 13px;
+                margin-bottom: 8px;
                 .p-name {
                     color: $textColor;
                     margin-right: 20px;
@@ -285,33 +285,35 @@ i.icon {
                     position: relative;
                     top: 4px;
                     color: #9b9b9b;
+                    font-size: 13px;
                 }
                 .tag-list {
                     margin-left: 75px;
                     font-size: 0;
                     .t-name {
                         @include vertical-center(24px);
-                        padding: 0 8px;
-                        margin-right: 15px;
-                        margin-bottom: 15px;
+                        padding: 0 6px;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
                         border: solid 1px #ccc;
-                        font-size: $textSize;
+                        font-size: 13px;
                     }
                 }
             }
 
             .p-introduce {
-                padding: 18px;
+                padding: 12px;
                 background-color: #f9fafa;
                 border: 1px solid #ededed;
+                font-size: 13px;
             }
 
         }
         .proj-after {
             $activeColor: #49a1f3;
             position: relative;
-            height: 53px;
-            padding-top: 13px;
+            height: 40px;
+            padding-top: 10px;
             padding-right: 60px;
             background-color: #fafafa;
             font-size: 0;
@@ -321,8 +323,8 @@ i.icon {
                 font-size: $textSize;
             }
             .btn {
-                width: 98px;
-                @include vertical-center(36px);
+                width: 94px;
+                @include vertical-center(30px);
                 margin-right: 10px;
                 border-radius: 32px;
                 text-align: center;
@@ -439,7 +441,16 @@ i.icon {
                 }
             }
             .see-btn {
-                margin-right: 45px;
+                margin-right: 90px;
+                .btn {
+                    width: 90px;
+                    &:hover {
+                        color: $activeColor;
+                        border-color: $activeColor;
+                        box-shadow: 0 0 3px 0 $activeColor;
+                        background: #fff;
+                    }
+                }
                 .active {
                     color: #fff;
                     background-color: $activeColor;
