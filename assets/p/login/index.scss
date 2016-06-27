@@ -1,9 +1,11 @@
 @charset"utf-8";
 
 @import '../../c/mixin.scss';
-@import '../../c/common.scss';
 @import '../../c/variables.scss';
-@import '../../c/header-footer.scss';
+
+
+@import '../../c/common.css';
+@import '../../c/header-footer.css';
 
 body {
     background: $bodyBackColor;
