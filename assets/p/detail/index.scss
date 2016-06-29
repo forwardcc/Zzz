@@ -68,9 +68,9 @@ body {
                 margin-left: 52px;
             }
             .see-btn {
-                margin-right: 0;
+                margin-right: 30px;
                 .btn {
-                    width: 88px;
+                    width: 70px;
                     @include vertical-center(30px);
                     margin-right: 10px;
                     &.favor {

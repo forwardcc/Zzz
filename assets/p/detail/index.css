@@ -49,9 +49,9 @@ body {
     .detail-left .project-item .proj-after .after-txt {
       margin-left: 52px; }
     .detail-left .project-item .proj-after .see-btn {
-      margin-right: 0; }
+      margin-right: 30px; }
       .detail-left .project-item .proj-after .see-btn .btn {
-        width: 88px;
+        width: 70px;
         height: 30px;
         line-height: 30px;
         margin-right: 10px; }

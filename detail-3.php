@@ -65,8 +65,8 @@
                         <div class="tag-group">
                             <span class="tag-type fl">所在赛道</span>
                             <div class="tag-list">
-                                <span class="t-name dib">商业地产领域的“爱屋及乌”</span>
-                                <span class="t-name dib">从设计师的角度切入的家装平台</span>
+                                <a href="" target="_blank" class="t-name dib">商业地产领域的“爱屋及乌”</a>
+                                <a href="" target="_blank" class="t-name dib">从设计师的角度切入的家装平台</a>
                             </div>
                         </div>
                     </div>
@@ -196,7 +196,7 @@
             <div class="card other-company">
                 <p class="card-hd">同赛道公司</p>
                 <p class="company-desc">
-                    这是同赛道相似的公司的信息介绍部分，很牛逼吧～～～
+                    <a href="" target="_blank">这是同赛道相似的公司的信息介绍部分，很牛逼吧～～～</a>
                 </p>
                 <a href="" class="other-com clearfix">
                     <img src="http://temp.im/40x40/f60/fff" class="other-img fl">
