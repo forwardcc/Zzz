@@ -120,9 +120,9 @@
 
             <div class="card company-pics">
                 <div data-slick="{'slidesToShow': 1, 'slidesToScroll': 1}" class="slide-container">
-                    <img src="http://temp.im/480x300/f60/fff" alt="">
-                    <img src="http://temp.im/480x300/9c0/fff" alt="">
-                    <img src="http://temp.im/480x300/333/fff" alt="">
+                    <img src="http://temp.im/400x300/f60/fff" alt="">
+                    <img src="http://temp.im/400x300/9c0/fff" alt="">
+                    <img src="http://temp.im/400x300/333/fff" alt="">
                 </div>
             </div>
 
@@ -131,20 +131,27 @@
             <div class="card timeline-info">
                 <p class="card-hd">发展历程</p>
                 <div class="bd">
-                    <div class="info-item">
-                        <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
-                        <span class="date">2016.2.16</span>
-                        <p class="desc">婚礼纪已经升级为整合婚礼供应链的平台。对于低频O2O怎么玩，提高效率。</p>
+                    <div class="info-bg">
+                        <div class="info-item">
+                            <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
+                            <span class="date">2016.2.16</span>
+                            <p class="desc">婚礼纪已经升级为整合婚礼供应链的平台。对于低频O2O怎么玩，提高效率。</p>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <span class="date">2016.2.16</span>
-                        <p class="title">初版审核通过上架苹果商店，开始线下用户的反馈获取 <a href="" target="_blank"><i class="icon link"></i></a></p>
+                    <div class="info-bg">
+                        <div class="info-item">
+                            <span class="date">2016.2.16</span>
+                            <p class="title">初版审核通过上架苹果商店，开始线下用户的反馈获取 <a href="" target="_blank"><i class="icon link"></i></a></p>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
-                        <span class="date">2016.2.16</span>
-                        <p class="desc">婚礼纪已经升级为整合婚礼供应链的平台。对于低频O2O怎么玩，提高效率，降低成本才是低频O2O发展的核心，而对于婚礼这样的高客单价O2O，盈利能力才是王道。</p>
+                    <div class="info-bg">
+                        <div class="info-item">
+                            <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
+                            <span class="date">2016.2.16</span>
+                            <p class="desc">婚礼纪已经升级为整合婚礼供应链的平台。对于低频O2O怎么玩，提高效率，降低成本才是低频O2O发展的核心，而对于婚礼这样的高客单价O2O，盈利能力才是王道。</p>
+                        </div>
                     </div>
+                    <a href="" class="show-all">展开全部23条</a>
                 </div>
             </div>
 
@@ -156,7 +163,7 @@
                             <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
                             <span class="date">2016.2.16</span>
                             <span class="tag dib">资本</span>
-                            <a href="" target="_blank" class="news-link fr">www.huxiu.com</a>
+                            <a href="" target="_blank" class="news-link fr">哈佛商业评论</a>
                         </div>
                     </div>
                     <div class="info-bg">
@@ -164,7 +171,7 @@
                             <p class="title">初版审核通过上架苹果商店，开始线下用户的反馈获取 <a href="" target="_blank"><i class="icon link"></i></a></p>
                             <span class="date">2016.2.16</span>
                             <span class="tag dib">人事变动</span>
-                            <a href="" target="_blank" class="news-link fr">www.huxiu.com</a>
+                            <a href="" target="_blank" class="news-link fr">36氪新闻</a>
                         </div>
                     </div>
                     <div class="info-bg">
@@ -172,9 +179,10 @@
                             <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
                             <span class="date">2016.2.16</span>
                             <span class="tag dib">内部消息</span>
-                            <a href="" target="_blank" class="news-link fr">www.huxiu.com</a>
+                            <a href="" target="_blank" class="news-link fr">哈佛商业评论</a>
                         </div>
                     </div>
+                    <a href="" class="show-all">展开全部23条</a>
                 </div>
             </div>
             

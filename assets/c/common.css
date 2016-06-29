@@ -137,8 +137,8 @@ i.icon {
 
 .main-content .slogan {
   width: 100%;
-  height: 80px;
-  padding-top: 20px;
+  height: 99px;
+  padding-top: 45px;
   text-align: center;
   font-size: 22px;
   color: #fff;
@@ -154,9 +154,9 @@ i.icon {
   margin-bottom: 10px;
   background: #fff; }
   .main-content .category .main-cate .item {
-    width: 80px;
-    height: 34px;
-    line-height: 34px;
+    width: 88px;
+    height: 32px;
+    line-height: 32px;
     margin-right: 8px;
     border: 1px solid #ccc;
     text-align: center;
@@ -167,14 +167,16 @@ i.icon {
       background: #459ff3;
       border-color: #459ff3; }
   .main-content .category .main-cate-order {
-    width: 120px;
-    height: 34px;
-    line-height: 34px;
+    width: 118px;
+    height: 32px;
+    line-height: 32px;
     position: relative;
     border: 1px solid #ccc;
-    text-align: center;
+    text-indent: 8px;
     font-size: 13px;
-    cursor: pointer; }
+    cursor: pointer;
+    background: url(/assets/pic/iconblack_arrow_down@2x.png) no-repeat 104px center;
+    background-size: 8px 8px; }
     .main-content .category .main-cate-order .order-types {
       display: none;
       margin-left: -1px;
@@ -182,11 +184,12 @@ i.icon {
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
       background: #fff; }
       .main-content .category .main-cate-order .order-types .item {
-        width: 120px;
-        height: 34px;
-        line-height: 34px;
+        width: 118px;
+        height: 32px;
+        line-height: 32px;
         border: 1px solid #ccc;
         border-bottom: 0 none;
+        text-indent: 0;
         text-align: center;
         font-size: 13px;
         cursor: pointer; }
@@ -197,11 +200,11 @@ i.icon {
     margin-top: 3px; }
   .main-content .category .secondary-cate .secondary-cate-list li,
   .main-content .category .secondary-cate .sec-cate-son-list li {
-    height: 22px;
-    line-height: 22px;
+    height: 26px;
+    line-height: 26px;
     padding: 0 12px;
     color: #4a4a4a;
-    margin-right: 15px;
+    margin-right: 10px;
     margin-bottom: 7px;
     cursor: pointer; }
     .main-content .category .secondary-cate .secondary-cate-list li.active,
@@ -223,7 +226,7 @@ i.icon {
       position: relative;
       height: 26px;
       line-height: 26px;
-      padding: 0 24px;
+      padding: 0 24px 0 10px;
       margin-right: 8px;
       background: #459ff3;
       color: #fff;
@@ -233,13 +236,13 @@ i.icon {
         right: 12px;
         font-style: normal; }
     .main-content .category .secondary-cate .selected-cate .clear-selected {
-      width: 83px;
+      width: 66px;
       height: 26px;
       line-height: 26px;
       text-align: center;
-      color: #459ff3;
+      color: #4a4a4a;
       background-color: #fff;
-      border: 1px solid #eeeeee; }
+      border: 1px solid #ececec; }
 
 .main-content .project-item {
   padding-top: 30px;
@@ -249,20 +252,22 @@ i.icon {
   font-size: 14px;
   color: #4a4a4a; }
   .main-content .project-item .proj-img {
-    width: 140px;
-    height: 140px;
+    width: 98px;
+    height: 98px;
     margin-left: 50px;
     border: 1px solid #e4e4e4; }
+    .main-content .project-item .proj-img img {
+      width: 100%; }
   .main-content .project-item .proj-desc {
-    margin-left: 220px;
-    margin-bottom: 20px;
+    margin-left: 180px;
+    margin-bottom: 10px;
     padding-right: 60px; }
     .main-content .project-item .proj-desc .basic-info {
       margin-bottom: 8px; }
       .main-content .project-item .proj-desc .basic-info .p-name {
         color: #4a4a4a;
         margin-right: 20px;
-        font-size: 22px; }
+        font-size: 20px; }
       .main-content .project-item .proj-desc .basic-info .p-area {
         margin-right: 12px; }
       .main-content .project-item .proj-desc .basic-info .p-url {
@@ -285,39 +290,60 @@ i.icon {
         .main-content .project-item .proj-desc .basic-info .p-media a {
           margin-right: 12px; }
     .main-content .project-item .proj-desc .p-tag .tag-type {
-      position: relative;
-      top: 4px;
       color: #9b9b9b;
-      font-size: 13px; }
+      font-size: 14px; }
     .main-content .project-item .proj-desc .p-tag .tag-list {
       margin-left: 75px;
       font-size: 0; }
       .main-content .project-item .proj-desc .p-tag .tag-list .t-name {
-        height: 24px;
-        line-height: 24px;
-        padding: 0 6px;
-        margin-right: 10px;
-        margin-bottom: 10px;
+        height: 18px;
+        line-height: 18px;
+        padding: 0 5px;
+        margin-right: 9px;
+        margin-bottom: 9px;
         border: solid 1px #ccc;
-        font-size: 13px; }
+        font-size: 12px; }
     .main-content .project-item .proj-desc .p-introduce {
-      padding: 12px;
+      position: relative;
+      padding: 10px;
       background-color: #f9fafa;
       border: 1px solid #ededed;
-      font-size: 13px; }
+      font-size: 12px;
+      line-height: 1.6;
+      padding-bottom: 20px; }
+      .main-content .project-item .proj-desc .p-introduce.show-all {
+        padding-bottom: 10px; }
+        .main-content .project-item .proj-desc .p-introduce.show-all p {
+          overflow: visible;
+          height: auto; }
+      .main-content .project-item .proj-desc .p-introduce p {
+        height: 55px;
+        overflow: hidden; }
+      .main-content .project-item .proj-desc .p-introduce .expand {
+        position: absolute;
+        width: 38px;
+        height: 22px;
+        right: 10px;
+        bottom: 0;
+        font-size: 13px;
+        color: #4a4a4a;
+        background: url(/assets/pic/iconblack_arrow_down@2x.png) no-repeat right center;
+        background-size: 8px 8px; }
   .main-content .project-item .proj-after {
     position: relative;
-    height: 40px;
-    padding-top: 10px;
+    height: 45px;
+    padding-top: 15px;
     padding-right: 60px;
     background-color: #fafafa;
     font-size: 0;
     border-top: 1px solid #ececec; }
     .main-content .project-item .proj-after .after-txt {
-      margin-left: 220px;
+      margin-left: 180px;
+      margin-right: 8px;
+      color: #000;
       font-size: 14px; }
     .main-content .project-item .proj-after .btn {
-      width: 94px;
+      width: 100px;
       height: 30px;
       line-height: 30px;
       margin-right: 10px;
@@ -420,9 +446,9 @@ i.icon {
               border: 1px solid #ececec;
               text-align: center; }
     .main-content .project-item .proj-after .see-btn {
-      margin-right: 90px; }
+      margin-right: 120px; }
       .main-content .project-item .proj-after .see-btn .btn {
-        width: 90px; }
+        width: 80px; }
         .main-content .project-item .proj-after .see-btn .btn:hover {
           color: #49a1f3;
           border-color: #49a1f3;

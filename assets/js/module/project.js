@@ -13,21 +13,36 @@ define(function(require) {
             // 收藏按钮
             $('.J_ProjectFavor').on('click', function(e){
                 e.preventDefault();
-                $(this).find('.my-roads').toggleClass('hide');
+                $(this).find('.my-roads').removeClass('hide');
             });
             $('.J_AddNewRoad').on('click', function(){
                 var ipt = $(this).siblings('input'),
                     roadName = ipt.val().trim();
                 if(roadName){
-                    $(this).parent().siblings('.roads-container').append('<p class="r-item">'+roadName+'</p>');
+                    $(this).parent().siblings('.roads-container').prepend('<p class="r-item">'+roadName+'</p>');
                     ipt.val('');
                 }
             });
+            $('.J_ProjectFavor').on('click', '.r-item', function(e){
+                e.preventDefault();
+                $('.J_ProjectFavor .my-roads').addClass('hide');
+                return false;
+            });
+
+
             $('.J_OperateBtns .btn').on('click', function(e){
                 e.preventDefault();
                 $('.J_OperateBtns .btn').removeClass('active');
                 $(this).addClass('active');
             });
+
+            // 展开项目描述
+            $('.J_ExpandProIntroduce').on('click', function(e){
+                e.preventDefault();
+                $(this).hide().parent().addClass('show-all');
+            })
+
+
             // 微信二维码
             $('.J_WechatQrcode').on('mouseenter', function(e){
                 $(this).siblings('.wx-qrcode').removeClass('hide');

@@ -26,268 +26,363 @@ body {
             text-indent: 9px;
         }
     }
-    // 公司详情
-    .detail-left {
-        width: 900px;
-        margin-right: 20px;
-        .project-item {
-            .p-name {
-                .products {
-                    font-size: 12px;
-                    a {
-                        color: #49a1f3;
-                    }
-                }
-            }
-            .p-intro {
-                position: relative;
-                span {
-                    position: absolute;
-                    color: #9b9b9b;
-                    font-size: 13px;
-                }
-                .p-introduce {
-                    margin-left: 75px;
-                }
-            }
-            .proj-after {
-                padding-right: 20px;
-                .after-txt {
-                    margin-left: 52px;
-                }
-                .see-btn {
-                    margin-right: 0;
-                    .btn {
-                        width: 88px;
-                        @include vertical-center(30px);
-                        margin-right: 10px;
-                        &.favor {
-                            margin-right: 44px;
-                        }
-                    }
-                }
-            }
-
+}
+// 公司详情
+.detail-left {
+    width: 900px;
+    margin-right: 20px;
+    .card {
+        .card-hd {
+            margin-bottom: 10px;
         }
-        .company-introduce {
-            padding: 0 40px 20px 0;
-            background: #fff;
-            .intro-bd {
-                margin-left: 54px;
-                position: relative;
-                .c-basic {
-                    margin-bottom: 16px;
-                    padding-bottom: 16px;
-                    border-bottom: 1px solid #ececec;
-                    font-size: 12px;
-                    color: #9b9b9b;
-                    .full-name {
-                        @include vertical-center(16px);
-                        font-size: 14px;
-                        color: #000;
-                    }
-                    .found-time {
-                        @include vertical-center(16px);
-                        font-size: 14px;
-                        color: #000;
-                    }
-                    .cur-status {
-                        @include vertical-center(16px);
-                        padding: 0 5px;
-                        margin-left: 44px;
-                        background-color: #ecf6ff;
-                        color: $backBlue;
-                    }
-                }
-                .c-desc {
-                    position: relative;
-                    height: 84px;
-                    padding-bottom: 5px;
-                    line-height: 2;
-                    overflow-y: hidden;
-                }
-                .unfold {
-                    position: absolute;
-                    right: 0;
-                    top: 130px;
-                    color: #55adff;
-                    font-size: 12px;
-                }
-            }
-        }
-
-        .company-pics {
-            padding: 10px 0 50px 0;
-            text-align: center;
-            .slide-container {
-                margin: auto;
-                width: 480px;
-                height: 300px;
-                .slick-arrow {
-                    width: 16px;
-                    height: 22px;
-                    background: #fff no-repeat center center;
-                    background-size: 100%;
-                    &:before {
-                        content: '';
-                    }
-                }
-                .slick-next {
-                    right: -66px;
-                    background-image: url('#{$picURL}/sliderright@2x.png');
-                }
-                .slick-prev {
-                    left: -64px;
-                    background-image: url('#{$picURL}/sliderleft@2x.png');
-                }
-                .slick-dots {
-                    position: static;
-                    margin-top: 10px;
-                    li button:before {
-                        color: #d8d8d8;
-                        opacity: 1 !important;
-                    }
-                    li.slick-active button:before {
-                        color: #409be4;
-                    }
-                }
-            }
-        }
-
-        .company-team {
-            .team-bd {
-                padding: 0 50px 0 30px;
-                .team-person {
-                    padding-bottom: 55px;
-                    margin-bottom: 29px;
-                    border-bottom: 1px solid #ececec;
+        
+    }
+    .project-item {
+        .p-name {
+            .products {
+                font-size: 12px;
+                a {
+                    color: #49a1f3;
+                    padding: 0 10px;
+                    border-right: 1px solid #49a1f3;
                     &:last-child {
-                        margin-bottom: 0;
-                        border-bottom: 0 none;
-                    }
-                    .avatar {
-                        width: 80px;
-                        height: 80px;
-                        img {
-                            border-radius: 50%;
-                        }
-                    }
-                    .person-info {
-                        @include vertical-center(24px);
-                        margin-left: 100px;
-                        margin-bottom: 5px;
-                        .basic-info {
-                            padding-top: 25px;
-                        }
-                        .p-name {
-                            font-size: 16px;
-                            vertical-align: top;
-                        }
-                        .p-title {
-                            font-size: 12px;
-                            color: #9b9b9b;
-                            margin-right: 15px;
-                            vertical-align: top;
-                        }
-                        .social {
-                            width: 24px;
-                            height: 24px;
-                        }
+                        border-right: 0;
                     }
                 }
             }
-            
         }
-
-
-        .company-product {
-            .c-product-list {
-                
+        .p-intro {
+            position: relative;
+            span {
+                position: absolute;
+                color: #9b9b9b;
+                font-size: 13px;
             }
-            .c-pro-item {
-                padding-bottom: 30px;
-                margin-bottom: 30px;
-                &:last-child {
-                    margin-bottom: 0;
-                    border-bottom: 0 none;
-                }
-                .p-info {
-                    margin-left: 270px;
-                }
-                .p-name {
-                    margin-right: 20px;
-                    font-size: 16px;
-                    color: #434343;
-                }
-                .p-company {
-                    color: #9b9b9b;
-                }
-                .p-intro {
-                    margin-top: 10px;
-                    line-height: 1.8;
-                    height: 100px;
-                    overflow-y: scroll;
-                }
-                .p-website {
-                    margin-left: 28px;
-                    font-size: 12px;
-                    color: #9b9b9b;
-                }
-                .p-type {
-                    margin-right: 4px;
-                    padding: 0 7px;
-                    font-size: 12px;
-                    background-color: #ecf6ff;
-                    color: $backBlue;
-                    @include vertical-center(18px);
-                }
-                &.with-pic {
-                    border-bottom: 1px solid #ececec;
-                    padding-right: 41px;
-                    padding-left: 41px;
-                    &.last {
-                        margin-bottom: 0;
-                    }
-                    .p-name {
-                        margin-right: 0;
-                        vertical-align: top;
-                    }
-                    .p-website {
-                        margin-left: 10px;
-                    }
-                }
-                &.only-link {
-                    position: relative;
-                    padding: 40px 0;
-                    margin-bottom: 0;
-                    width: 449px;
-                    text-align: center;
-                    .p-company {
-                        margin-top: 20px;
-                    }
-                    .icon {
-                        position: absolute;
-                        right: 60px;
-                        top: 60px;
-                    }
-                    &:hover {
-                        background: #fafafa;
+            .p-introduce {
+                margin-left: 75px;
+            }
+        }
+        .proj-after {
+            padding-right: 20px;
+            .after-txt {
+                margin-left: 52px;
+            }
+            .see-btn {
+                margin-right: 0;
+                .btn {
+                    width: 88px;
+                    @include vertical-center(30px);
+                    margin-right: 10px;
+                    &.favor {
+                        margin-right: 44px;
                     }
                 }
             }
         }
 
-        .timeline-info {
-            color: $textColor;
-            .bd {
-                padding-bottom: 64px;
+    }
+    .company-introduce {
+        padding: 0 40px 20px 0;
+        background: #fff;
+        .intro-bd {
+            margin-left: 54px;
+            position: relative;
+            .c-basic {
+                margin-bottom: 16px;
+                padding-top: 16px;
+                border-top: 1px solid #ececec;
+                font-size: 12px;
+                color: #9b9b9b;
             }
-            .info-item {
+            .full-name {
+                @include vertical-center(16px);
+                font-size: 14px;
+                color: #000;
+            }
+            .found-time {
+                @include vertical-center(16px);
+                font-size: 14px;
+                color: #000;
+            }
+            .cur-status {
+                @include vertical-center(16px);
+                padding: 0 5px;
+                margin-left: 8px;
+                background-color: #ecf6ff;
+                color: $backBlue;
+            }
+            .c-desc {
                 position: relative;
-                padding-bottom: 48px;
-                margin-left: 125px;
-                padding-left: 22px;
-                padding-right: 56px;
+                height: 84px;
+                padding-bottom: 5px;
+                line-height: 2;
+                overflow-y: hidden;
+            }
+            .unfold {
+                position: absolute;
+                right: 0;
+                top: 130px;
+                color: #55adff;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .company-pics {
+        padding: 20px 0 50px 0;
+        text-align: center;
+        .slide-container {
+            margin: auto;
+            width: 400px;
+            height: 300px;
+            .slick-arrow {
+                width: 16px;
+                height: 22px;
+                background: #fff no-repeat center center;
+                background-size: 100%;
+                &:before {
+                    content: '';
+                }
+            }
+            .slick-next {
+                right: -66px;
+                background-image: url('#{$picURL}/sliderright@2x.png');
+            }
+            .slick-prev {
+                left: -64px;
+                background-image: url('#{$picURL}/sliderleft@2x.png');
+            }
+            .slick-dots {
+                position: static;
+                margin-top: 10px;
+                li button:before {
+                    color: #d8d8d8;
+                    opacity: 1 !important;
+                }
+                li.slick-active button:before {
+                    color: #409be4;
+                }
+            }
+        }
+    }
+
+    .company-team {
+        .team-bd {
+            margin: 0 40px 0 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ececec;
+        }
+        .team-person {
+            padding-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+                border-bottom: 0 none;
+            }
+            .avatar {
+                width: 60px;
+                height: 60px;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .person-info {
+                margin-left: 80px;
+                margin-bottom: 5px;
+            }
+            .basic-info {
+                // padding-top: 25px;
+            }
+            .p-name {
+                font-size: 16px;
+                vertical-align: top;
+            }
+            .p-title {
+                margin-right: 30px;
+                vertical-align: top;
+                font-size: 16px;
+                color: #9b9b9b;
+            }
+            .social {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        
+    }
+
+
+    .company-product {
+        .c-pro-item {
+            margin: 0 41px 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ececec;
+
+            &:first-child {
+                padding-top: 30px;
+                border-top: 1px solid #ececec;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                border-bottom: 0 none;
+            }
+        }
+        .p-info {
+            margin-left: 220px;
+        }
+        .p-name {
+            margin-right: 8px;
+            font-size: 16px;
+            color: #434343;
+            vertical-align: top;
+            &:hover {
+                color: $backBlue;
+            }
+        }
+        .p-company {
+            color: #9b9b9b;
+        }
+        .p-intro {
+            margin-top: 10px;
+            line-height: 1.8;
+            height: 100px;
+            overflow-y: auto;
+        }
+    }
+
+    .timeline-info {
+        color: $textColor;
+        .card-hd {
+            position: relative;
+            margin-left: 40px;
+            margin-right: 40px;
+            &:after {
+                content: '';
+                width: 103%;
+                border-bottom: 1px solid #ececec;
+                height: 1px;
+                position: absolute;
+                left: -14px;
+                bottom: -10px;
+            }
+        }
+        .bd {
+            padding-bottom: 30px;
+        }
+        .info-bg {
+            &:first-child {
+                margin-top: 25px;
+            }
+            &:hover {
+                background: #fafafa;
+                .title {
+                    color: $backBlue;
+                }
+            }
+        }
+        .info-item {
+            position: relative;
+            margin-left: 115px;
+            padding: 0 56px 48px 22px;
+            border-left: 1px solid #f0f0f0;
+            &:before {
+                position: absolute;
+                top: 7px;
+                left: -4px;
+                content: '';
+                width: 8px;
+                height: 8px;
+                background-color: #459ff3;
+                border-radius: 8px;
+                box-shadow: 0px 0px 0 2px #f5f5f5;
+            }
+            &:first-child:before {
+                top: 22px;
+            }
+            &:last-child {
+                padding-bottom: 24px;
+            }
+            .title {
+                font-size: 14px;
+                .icon {
+                    position: relative;
+                    top: 3px;
+                }
+            }
+            .desc {
+                font-size: 12px;
+                color: #878787;
+            }
+            .date {
+                position: absolute;
+                left: -77px;
+                top: 3px;
+                font-size: 14px;
+                color: $textColor;
+            }
+            &:first-child {
+                .title {
+                    padding-top: 16px;
+                }
+                .date {
+                    top: 18px;
+                }
+            }
+        }
+        &.news {
+            .info-item {
+                .tag {
+                    padding: 2px 5px;
+                    line-height: 1;
+                    font-size: 12px;
+                    color: #9b9b9b;
+                    border: solid 1px #ececec;
+                }
+                .news-link {
+                    margin-top: 14px;
+                    font-size: 12px;
+                    color: #9b9b9b;
+                }
+            }
+        }
+
+        .show-all {
+            display: block;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #9b9b9b;
+            text-align: center;
+        }
+    }
+
+
+    /* 设置滚动条的样式 */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    /* 滚动槽 */
+    ::-webkit-scrollbar-track {
+        background: #ededed;
+        border-radius: 10px;
+    }
+    /* 滚动条滑块 */
+    ::-webkit-scrollbar-thumb {
+        background: #459ff3
+    }
+}
+.detail-right {
+    width: 260px;
+    .card {
+        padding: 0 0 20px 20px;
+        .card-hd {
+            margin-left: 0;
+        }
+    }
+    .company-history {
+        .history-list {
+            .h-item {
+                position: relative;
+                padding-bottom: 19px;
+                padding-left: 20px;
                 border-left: 1px solid #f0f0f0;
                 &:before {
                     position: absolute;
@@ -301,137 +396,54 @@ body {
                     box-shadow: 0px 0px 0 2px #f5f5f5;
                 }
                 &:first-child:before {
-                    top: 22px;
+                    top: 35px;
                 }
                 &:last-child {
-                    padding-bottom: 24px;
+                    padding-bottom: 0;
                 }
-                .title {
-                    font-size: 14px;
-                    .icon {
-                        position: relative;
-                        top: 3px;
-                    }
+                p {
+                    line-height: 2;
                 }
-                .desc {
+                .h-date {
                     font-size: 12px;
-                    color: #878787;
                 }
-                .date {
-                    position: absolute;
-                    left: -77px;
-                    top: 3px;
-                    font-size: 14px;
-                    color: $textColor;
-                }
-                &:first-child {
-                    .title {
-                        padding-top: 16px;
-                    }
-                    .date {
-                        top: 18px;
-                    }
-                }
-            }
-            &.news {
-                .info-bg:hover {
-                    background: #fafafa;
-                }
-                .info-item {
-                    .date {
-                        font-size: 12px;
-                        position: static;
-                        color: #9b9b9b;
-                    }
-                    .tag {
-                        padding: 2px 5px;
-                        line-height: 1;
-                        font-size: 12px;
-                        color: #9b9b9b;
-                        border: solid 1px #ececec;
-                    }
-                    .news-link {
-                        margin-top: 14px;
-                        font-size: 12px;
-                        color: #9b9b9b;
-                    }
+                .h-from {
+                    font-size: 12px;
+                    color: $backBlue;
                 }
             }
         }
     }
-    .detail-right {
-        width: 260px;
-        .card {
-            padding: 0 0 20px 20px;
-        }
-        .card-hd {
-            margin-left: 0;
-        }
-        .company-history {
-            .history-list {
-                .h-item {
-                    position: relative;
-                    padding-bottom: 19px;
-                    padding-left: 20px;
-                    border-left: 1px solid #f0f0f0;
-                    &:before {
-                        position: absolute;
-                        top: 7px;
-                        left: -4px;
-                        content: '';
-                        width: 8px;
-                        height: 8px;
-                        background-color: #459ff3;
-                        border-radius: 8px;
-                        box-shadow: 0px 0px 0 2px #f5f5f5;
-                    }
-                    &:first-child:before {
-                        top: 35px;
-                    }
-                    p {
-                        line-height: 2;
-                    }
-                    .h-date {
-                        font-size: 12px;
-                    }
-                    .h-from {
-                        font-size: 12px;
-                        color:$backBlue;
-                    }
-                }
+    .company-desc {
+        margin-bottom: 20px;
+    }
+    .contacts {
+        .email {
+            margin: 18px 0;
+            a {
+                color: #4a4a4a;
             }
         }
-        .company-desc {
+        .icon {
+            width: 14px;
+            height: 14px;
+            margin-right: 16px;
+            &.location {
+                position: relative;
+                top: 6px;
+                height: 22px;
+            }
+        }
+    }
+    .other-company {
+        .other-com {
+            display: block;
             margin-bottom: 20px;
         }
-        .contacts {
-            .email {
-                margin: 18px 0;
-                a {
-                    color: #4a4a4a;
-                }
-            }
-            .icon {
-                width: 14px;
-                height: 14px;
-                margin-right: 16px;
-                &.location {
-                    position: relative;
-                    top: 6px;
-                    height: 22px;
-                }
-            }
-        }
-        .other-company {
-            .other-com {
-                display: block;
-                margin-bottom: 20px;
-            }
-            .other-name {
-                margin-left: 54px;
-                @include vertical-center(40px);
-                color: #434343;
-            }
+        .other-name {
+            margin-left: 54px;
+            @include vertical-center(40px);
+            color: #434343;
         }
     }
 }

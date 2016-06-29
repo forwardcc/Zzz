@@ -9,10 +9,16 @@ gulp.task('css', function () {
         // .pipe(minifyCSS()).pipe(gulp.dest('./assets'))
 });
 
-gulp.task('sass', function() {
-    gulp.src('./assets/**/*.scss')
+gulp.task('common-sass', function() {
+    gulp.src('./assets/c/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./assets'));
+        .pipe(gulp.dest('./assets/c'));
+});
+
+gulp.task('sass', ['common-sass'], function() {
+    gulp.src('./assets/p/**/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./assets/p'));
 });
 
 gulp.task('default', function(){

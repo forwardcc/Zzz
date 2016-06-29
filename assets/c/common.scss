@@ -95,8 +95,8 @@ i.icon {
 .main-content {
     .slogan {
         width: 100%;
-        height: 80px;
-        padding-top: 20px;
+        height: 99px;
+        padding-top: 45px;
         text-align: center;
         font-size: 22px;
         color: #fff;
@@ -115,8 +115,8 @@ i.icon {
         // 主分类
         .main-cate {
             .item {
-                width: 80px;
-                @include vertical-center(34px);
+                width: 88px;
+                @include vertical-center(32px);
                 margin-right: 8px;
                 border: 1px solid #ccc;
                 text-align: center;
@@ -129,18 +129,18 @@ i.icon {
                 }
             }
         }
+        // 分类排序
         .main-cate-order {
-            width: 120px;
-            @include vertical-center(34px);
+            width: 118px;
+            @include vertical-center(32px);
             position: relative;
             // overflow: hidden;
             border: 1px solid #ccc;
-            text-align: center;
+            text-indent: 8px;
             font-size: 13px;
             cursor: pointer;
-            // &:hover {
-            //     overflow: visible;
-            // }
+            background: url(#{$picURL}/iconblack_arrow_down@2x.png) no-repeat 104px center;
+            background-size: 8px 8px;
             .order-types {
                 display: none;
                 margin-left: -1px;
@@ -148,10 +148,11 @@ i.icon {
                 box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
                 background: #fff;
                 .item {
-                    width: 120px;
-                    @include vertical-center(34px);
+                    width: 118px;
+                    @include vertical-center(32px);
                     border: 1px solid #ccc;
                     border-bottom: 0 none;
+                    text-indent: 0;
                     text-align: center;
                     font-size: 13px;
                     cursor: pointer;
@@ -171,10 +172,10 @@ i.icon {
             .secondary-cate-list,
             .sec-cate-son-list {
                 li {
-                    @include vertical-center(22px);
+                    @include vertical-center(26px);
                     padding: 0 12px;
                     color: $textColor;
-                    margin-right: 15px;
+                    margin-right: 10px;
                     margin-bottom: 7px;
                     cursor: pointer;
                     &.active {
@@ -199,7 +200,7 @@ i.icon {
                 .sel-item {
                     position: relative;
                     @include vertical-center(26px);
-                    padding: 0 24px;
+                    padding: 0 24px 0 10px;
                     margin-right: 8px;
                     background: $backBlue;
                     color: #fff;
@@ -211,12 +212,12 @@ i.icon {
                     }
                 }
                 .clear-selected {
-                    width: 83px;
+                    width: 66px;
                     @include vertical-center(26px);
                     text-align: center;
-                    color: #459ff3;
+                    color: $textColor;
                     background-color: #fff;
-                    border: 1px solid #eeeeee;
+                    border: 1px solid #ececec;
                 }
             }
         }
@@ -231,21 +232,24 @@ i.icon {
         font-size: $textSize;
         color: $textColor;
         .proj-img {
-            width: 140px;
-            height: 140px;
+            width: 98px;
+            height: 98px;
             margin-left: 50px;
             border: 1px solid #e4e4e4;
+            img {
+                width: 100%;
+            }
         }
         .proj-desc {
-            margin-left: 220px;
-            margin-bottom: 20px;
+            margin-left: 180px;
+            margin-bottom: 10px;
             padding-right: 60px;
             .basic-info {
                 margin-bottom: 8px;
                 .p-name {
                     color: $textColor;
                     margin-right: 20px;
-                    font-size: 22px;
+                    font-size: 20px;
                 }
                 .p-area {
                     margin-right: 12px;
@@ -282,48 +286,73 @@ i.icon {
                     
                }
                 .tag-type {
-                    position: relative;
-                    top: 4px;
                     color: #9b9b9b;
-                    font-size: 13px;
+                    font-size: 14px;
                 }
                 .tag-list {
                     margin-left: 75px;
                     font-size: 0;
                     .t-name {
-                        @include vertical-center(24px);
-                        padding: 0 6px;
-                        margin-right: 10px;
-                        margin-bottom: 10px;
+                        @include vertical-center(18px);
+                        padding: 0 5px;
+                        margin-right: 9px;
+                        margin-bottom: 9px;
                         border: solid 1px #ccc;
-                        font-size: 13px;
+                        font-size: 12px;
                     }
                 }
             }
 
             .p-introduce {
-                padding: 12px;
+                position: relative;
+                padding: 10px;
                 background-color: #f9fafa;
                 border: 1px solid #ededed;
-                font-size: 13px;
+                font-size: 12px;
+                line-height: 1.6;
+                padding-bottom: 20px;
+                &.show-all {
+                    p {
+                        overflow: visible;
+                        height: auto;
+                    }
+                    padding-bottom: 10px;
+                }
+                p {
+                    height: 55px;
+                    overflow: hidden;
+                }
+                .expand {
+                    position: absolute;
+                    width: 38px;
+                    height: 22px;
+                    right: 10px;
+                    bottom: 0;
+                    font-size: 13px;
+                    color: $textColor;
+                    background: url(#{$picURL}/iconblack_arrow_down@2x.png) no-repeat right center;
+                    background-size: 8px 8px;
+                }
             }
 
         }
         .proj-after {
             $activeColor: #49a1f3;
             position: relative;
-            height: 40px;
-            padding-top: 10px;
+            height: 45px;
+            padding-top: 15px;
             padding-right: 60px;
             background-color: #fafafa;
             font-size: 0;
             border-top: 1px solid #ececec;
             .after-txt {
-                margin-left: 220px;
-                font-size: $textSize;
+                margin-left: 180px;
+                margin-right: 8px;
+                color: #000;
+                font-size: 14px;
             }
             .btn {
-                width: 94px;
+                width: 100px;
                 @include vertical-center(30px);
                 margin-right: 10px;
                 border-radius: 32px;
@@ -441,9 +470,9 @@ i.icon {
                 }
             }
             .see-btn {
-                margin-right: 90px;
+                margin-right: 120px;
                 .btn {
-                    width: 90px;
+                    width: 80px;
                     &:hover {
                         color: $activeColor;
                         border-color: $activeColor;

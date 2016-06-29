@@ -120,12 +120,20 @@
                 </div>
             </div>
 
+            <div class="card company-pics">
+                <div data-slick="{'slidesToShow': 1, 'slidesToScroll': 1}" class="slide-container">
+                    <img src="http://temp.im/400x300/f60/fff" alt="">
+                    <img src="http://temp.im/400x300/9c0/fff" alt="">
+                    <img src="http://temp.im/400x300/333/fff" alt="">
+                </div>
+            </div>
+
             <div class="card company-introduce">
                 <p class="card-hd">公司介绍</p>
                 <div class="intro-bd">
                     <div class="c-basic clearfix">
                         <p class="full-name fl">公司全称：杭州神宙信息技术有限公司</p>
-                        <p class="cur-status fr">运营中</p>
+                        <p class="cur-status fl">运营中</p>
                         <p class="found-time fr">成立时间：2015.10.18</p>
                     </div>
                     <div class="c-desc ">
@@ -136,26 +144,17 @@
                 </div>  
             </div>
 
-
-            <div class="card company-pics">
-                <div data-slick="{'slidesToShow': 1, 'slidesToScroll': 1}" class="slide-container">
-                    <img src="http://temp.im/480x300/f60/fff" alt="">
-                    <img src="http://temp.im/480x300/9c0/fff" alt="">
-                    <img src="http://temp.im/480x300/333/fff" alt="">
-                </div>
-            </div>
-
             <div class="card company-team">
                 <p class="card-hd">管理团队</p>
                 <div class="team-bd">
                     <div class="team-person clearfix">
                         <div class="avatar fl">
-                            <img src="http://temp.im/80x80/f60/fff" alt="">
+                            <img src="http://temp.im/60x60/f60/fff" alt="">
                         </div>
                         <div class="person-info">
                             <div class="basic-info">
                                 <span class="p-name">江巍</span>
-                                <pan class="p-title">创始人&CEO</pan>
+                                <span class="p-title">创始人&CEO</span>
                                 <a href=""><i class="icon social linkedin"></i></a>
                                 <a href=""><i class="icon social weibo"></i></a>
                                 <a href=""><i class="icon social zhihu"></i></a>
@@ -168,12 +167,12 @@
                     </div>
                     <div class="team-person clearfix">
                         <div class="avatar fl">
-                            <img src="http://temp.im/80x80/f60/fff" alt="">
+                            <img src="http://temp.im/60x60/f60/fff" alt="">
                         </div>
                         <div class="person-info">
                             <div class="basic-info">
                                 <span class="p-name">江巍</span>
-                                <pan class="p-title">创始人&CEO</pan>
+                                <span class="p-title">创始人&CEO</span>
                                 <a href=""><i class="icon social linkedin"></i></a>
                                 <a href=""><i class="icon social weibo"></i></a>
                                 <a href=""><i class="icon social zhihu"></i></a>
@@ -191,9 +190,9 @@
             <div class="card company-product">
                 <p class="card-hd">公司产品</p>
                 <ul class="c-product-list clearfix">
-                    <li class="c-pro-item with-pic clearfix">
+                    <li class="c-pro-item clearfix">
                         <div class="p-pic fl">
-                            <img src="http://temp.im/240x130/f60/fff">
+                            <img src="http://temp.im/200x110/f60/fff">
                         </div>
                         <div class="p-info">
                             <span class="p-name">量化派</span>
@@ -204,9 +203,9 @@
                             </p>
                         </div>
                     </li>
-                    <li class="c-pro-item with-pic clearfix">
+                    <li class="c-pro-item clearfix">
                         <div class="p-pic fl">
-                            <img src="http://temp.im/240x130/f60/fff">
+                            <img src="http://temp.im/200x110/f60/fff">
                         </div>
                         <div class="p-info">
                             <span class="p-name">秒拍</span>
@@ -216,9 +215,9 @@
                             </p>
                         </div>
                     </li>
-                    <li class="c-pro-item with-pic clearfix last">
+                    <li class="c-pro-item clearfix last">
                         <div class="p-pic fl">
-                            <img src="http://temp.im/240x130/f60/fff">
+                            <img src="http://temp.im/200x110/f60/fff">
                         </div>
                         <div class="p-info">
                             <span class="p-name">小咖秀</span>
@@ -228,30 +227,6 @@
                             </p>
                         </div>
                     </li>
-                    <!-- <li class="c-pro-item only-link fl">
-                        <span class="p-type dib">网站</span>
-                        <a href="" class="p-name">贝瓦网</a>
-                        <p class="p-company">儿童成长门户网站</p>
-                        <i class="icon link"></i>
-                    </li>
-                    <li class="c-pro-item only-link fl">
-                        <span class="p-type dib">网站</span>
-                        <a href="" class="p-name">量化派</a>
-                        <p class="p-company">儿童成长门户网站</p>
-                        <i class="icon link"></i>
-                    </li>
-                    <li class="c-pro-item only-link fl">
-                        <span class="p-type dib">网站</span>
-                        <a href="" class="p-name">贝瓦网</a>
-                        <p class="p-company">儿童成长门户网站</p>
-                        <i class="icon link"></i>
-                    </li>
-                    <li class="c-pro-item only-link fl">
-                        <span class="p-type dib">网站</span>
-                        <a href="" class="p-name">量化派</a>
-                        <p class="p-company">儿童成长门户网站</p>
-                        <i class="icon link"></i>
-                    </li> -->
                 </ul>
             </div>
 
@@ -259,20 +234,27 @@
             <div class="card timeline-info">
                 <p class="card-hd">发展历程</p>
                 <div class="bd">
-                    <div class="info-item">
-                        <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
-                        <span class="date">2016.2.16</span>
-                        <p class="desc">婚礼纪已经升级为整合婚礼供应链的平台。对于低频O2O怎么玩，提高效率。</p>
+                    <div class="info-bg">
+                        <div class="info-item">
+                            <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
+                            <span class="date">2016.2.16</span>
+                            <p class="desc">婚礼纪已经升级为整合婚礼供应链的平台。对于低频O2O怎么玩，提高效率。</p>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <span class="date">2016.2.16</span>
-                        <p class="title">初版审核通过上架苹果商店，开始线下用户的反馈获取 <a href="" target="_blank"><i class="icon link"></i></a></p>
+                    <div class="info-bg">
+                        <div class="info-item">
+                            <span class="date">2016.2.16</span>
+                            <p class="title">初版审核通过上架苹果商店，开始线下用户的反馈获取 <a href="" target="_blank"><i class="icon link"></i></a></p>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
-                        <span class="date">2016.2.16</span>
-                        <p class="desc">婚礼纪已经升级为整合婚礼供应链的平台。对于低频O2O怎么玩，提高效率，降低成本才是低频O2O发展的核心，而对于婚礼这样的高客单价O2O，盈利能力才是王道。</p>
+                    <div class="info-bg">
+                        <div class="info-item">
+                            <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
+                            <span class="date">2016.2.16</span>
+                            <p class="desc">婚礼纪已经升级为整合婚礼供应链的平台。对于低频O2O怎么玩，提高效率，降低成本才是低频O2O发展的核心，而对于婚礼这样的高客单价O2O，盈利能力才是王道。</p>
+                        </div>
                     </div>
+                    <a href="" class="show-all">展开全部23条</a>
                 </div>
             </div>
 
@@ -284,7 +266,7 @@
                             <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
                             <span class="date">2016.2.16</span>
                             <span class="tag dib">资本</span>
-                            <a href="" target="_blank" class="news-link fr">www.huxiu.com</a>
+                            <a href="" target="_blank" class="news-link fr">哈佛商业评论</a>
                         </div>
                     </div>
                     <div class="info-bg">
@@ -292,7 +274,7 @@
                             <p class="title">初版审核通过上架苹果商店，开始线下用户的反馈获取 <a href="" target="_blank"><i class="icon link"></i></a></p>
                             <span class="date">2016.2.16</span>
                             <span class="tag dib">人事变动</span>
-                            <a href="" target="_blank" class="news-link fr">www.huxiu.com</a>
+                            <a href="" target="_blank" class="news-link fr">36氪新闻</a>
                         </div>
                     </div>
                     <div class="info-bg">
@@ -300,9 +282,10 @@
                             <p class="title">修正了反馈问题，更新了大量新玩法，正式对外获取种子用户并继续试水线下</p>
                             <span class="date">2016.2.16</span>
                             <span class="tag dib">内部消息</span>
-                            <a href="" target="_blank" class="news-link fr">www.huxiu.com</a>
+                            <a href="" target="_blank" class="news-link fr">哈佛商业评论</a>
                         </div>
                     </div>
+                    <a href="" class="show-all">展开全部23条</a>
                 </div>
             </div>
             
@@ -314,18 +297,18 @@
                 <div class="history-list">
                     <li class="h-item">
                         <p class="h-date">2016.2.16 </p>
-                        <p class="h-money">E轮及以后数千万人民币</p>
-                        <p class="h-from">红杉资本中国、源码资本</p>
+                        <p class="h-money">A轮 | 1500万美元</p>
+                        <p class="h-from">红杉资本中国</p>
                     </li>
                     <li class="h-item">
                         <p class="h-date">2016.2.16 </p>
-                        <p class="h-money">E轮及以后数千万人民币</p>
-                        <p class="h-from">红杉资本中国、源码资本</p>
+                        <p class="h-money">A轮 | 1500万美元</p>
+                        <p class="h-from">红杉资本中国<br>源码资本</p>
                     </li>
                     <li class="h-item">
                         <p class="h-date">2016.2.16 </p>
-                        <p class="h-money">E轮及以后数千万人民币</p>
-                        <p class="h-from">红杉资本中国、源码资本</p>
+                        <p class="h-money">A轮 | 1500万美元</p>
+                        <p class="h-from">红杉资本中国<br>源码资本</p>
                     </li>
                 </div>
             </div>

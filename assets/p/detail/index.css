@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../../c/common.css);
 @import url(../../c/header-footer.css);
 body {
@@ -18,262 +19,195 @@ body {
       border-left: 4px solid #459ff3;
       margin-left: 41px;
       text-indent: 9px; }
-  .main-content .detail-left {
-    width: 900px;
-    margin-right: 20px; }
-    .main-content .detail-left .project-item .p-name .products {
-      font-size: 12px; }
-      .main-content .detail-left .project-item .p-name .products a {
-        color: #49a1f3; }
-    .main-content .detail-left .project-item .p-intro {
+
+.detail-left {
+  width: 900px;
+  margin-right: 20px;
+  /* 设置滚动条的样式 */
+  /* 滚动槽 */
+  /* 滚动条滑块 */ }
+  .detail-left .card .card-hd {
+    margin-bottom: 10px; }
+  .detail-left .project-item .p-name .products {
+    font-size: 12px; }
+    .detail-left .project-item .p-name .products a {
+      color: #49a1f3;
+      padding: 0 10px;
+      border-right: 1px solid #49a1f3; }
+      .detail-left .project-item .p-name .products a:last-child {
+        border-right: 0; }
+  .detail-left .project-item .p-intro {
+    position: relative; }
+    .detail-left .project-item .p-intro span {
+      position: absolute;
+      color: #9b9b9b;
+      font-size: 13px; }
+    .detail-left .project-item .p-intro .p-introduce {
+      margin-left: 75px; }
+  .detail-left .project-item .proj-after {
+    padding-right: 20px; }
+    .detail-left .project-item .proj-after .after-txt {
+      margin-left: 52px; }
+    .detail-left .project-item .proj-after .see-btn {
+      margin-right: 0; }
+      .detail-left .project-item .proj-after .see-btn .btn {
+        width: 88px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 10px; }
+        .detail-left .project-item .proj-after .see-btn .btn.favor {
+          margin-right: 44px; }
+  .detail-left .company-introduce {
+    padding: 0 40px 20px 0;
+    background: #fff; }
+    .detail-left .company-introduce .intro-bd {
+      margin-left: 54px;
       position: relative; }
-      .main-content .detail-left .project-item .p-intro span {
-        position: absolute;
-        color: #9b9b9b;
-        font-size: 13px; }
-      .main-content .detail-left .project-item .p-intro .p-introduce {
-        margin-left: 75px; }
-    .main-content .detail-left .project-item .proj-after {
-      padding-right: 20px; }
-      .main-content .detail-left .project-item .proj-after .after-txt {
-        margin-left: 52px; }
-      .main-content .detail-left .project-item .proj-after .see-btn {
-        margin-right: 0; }
-        .main-content .detail-left .project-item .proj-after .see-btn .btn {
-          width: 88px;
-          height: 30px;
-          line-height: 30px;
-          margin-right: 10px; }
-          .main-content .detail-left .project-item .proj-after .see-btn .btn.favor {
-            margin-right: 44px; }
-    .main-content .detail-left .company-introduce {
-      padding: 0 40px 20px 0;
-      background: #fff; }
-      .main-content .detail-left .company-introduce .intro-bd {
-        margin-left: 54px;
-        position: relative; }
-        .main-content .detail-left .company-introduce .intro-bd .c-basic {
-          margin-bottom: 16px;
-          padding-bottom: 16px;
-          border-bottom: 1px solid #ececec;
-          font-size: 12px;
-          color: #9b9b9b; }
-          .main-content .detail-left .company-introduce .intro-bd .c-basic .full-name {
-            height: 16px;
-            line-height: 16px;
-            font-size: 14px;
-            color: #000; }
-          .main-content .detail-left .company-introduce .intro-bd .c-basic .found-time {
-            height: 16px;
-            line-height: 16px;
-            font-size: 14px;
-            color: #000; }
-          .main-content .detail-left .company-introduce .intro-bd .c-basic .cur-status {
-            height: 16px;
-            line-height: 16px;
-            padding: 0 5px;
-            margin-left: 44px;
-            background-color: #ecf6ff;
-            color: #459ff3; }
-        .main-content .detail-left .company-introduce .intro-bd .c-desc {
-          position: relative;
-          height: 84px;
-          padding-bottom: 5px;
-          line-height: 2;
-          overflow-y: hidden; }
-        .main-content .detail-left .company-introduce .intro-bd .unfold {
-          position: absolute;
-          right: 0;
-          top: 130px;
-          color: #55adff;
-          font-size: 12px; }
-    .main-content .detail-left .company-pics {
-      padding: 10px 0 50px 0;
-      text-align: center; }
-      .main-content .detail-left .company-pics .slide-container {
-        margin: auto;
-        width: 480px;
-        height: 300px; }
-        .main-content .detail-left .company-pics .slide-container .slick-arrow {
-          width: 16px;
-          height: 22px;
-          background: #fff no-repeat center center;
-          background-size: 100%; }
-          .main-content .detail-left .company-pics .slide-container .slick-arrow:before {
-            content: ''; }
-        .main-content .detail-left .company-pics .slide-container .slick-next {
-          right: -66px;
-          background-image: url("/assets/pic/sliderright@2x.png"); }
-        .main-content .detail-left .company-pics .slide-container .slick-prev {
-          left: -64px;
-          background-image: url("/assets/pic/sliderleft@2x.png"); }
-        .main-content .detail-left .company-pics .slide-container .slick-dots {
-          position: static;
-          margin-top: 10px; }
-          .main-content .detail-left .company-pics .slide-container .slick-dots li button:before {
-            color: #d8d8d8;
-            opacity: 1 !important; }
-          .main-content .detail-left .company-pics .slide-container .slick-dots li.slick-active button:before {
-            color: #409be4; }
-    .main-content .detail-left .company-team .team-bd {
-      padding: 0 50px 0 30px; }
-      .main-content .detail-left .company-team .team-bd .team-person {
-        padding-bottom: 55px;
-        margin-bottom: 29px;
-        border-bottom: 1px solid #ececec; }
-        .main-content .detail-left .company-team .team-bd .team-person:last-child {
-          margin-bottom: 0;
-          border-bottom: 0 none; }
-        .main-content .detail-left .company-team .team-bd .team-person .avatar {
-          width: 80px;
-          height: 80px; }
-          .main-content .detail-left .company-team .team-bd .team-person .avatar img {
-            border-radius: 50%; }
-        .main-content .detail-left .company-team .team-bd .team-person .person-info {
-          height: 24px;
-          line-height: 24px;
-          margin-left: 100px;
-          margin-bottom: 5px; }
-          .main-content .detail-left .company-team .team-bd .team-person .person-info .basic-info {
-            padding-top: 25px; }
-          .main-content .detail-left .company-team .team-bd .team-person .person-info .p-name {
-            font-size: 16px;
-            vertical-align: top; }
-          .main-content .detail-left .company-team .team-bd .team-person .person-info .p-title {
-            font-size: 12px;
-            color: #9b9b9b;
-            margin-right: 15px;
-            vertical-align: top; }
-          .main-content .detail-left .company-team .team-bd .team-person .person-info .social {
-            width: 24px;
-            height: 24px; }
-    .main-content .detail-left .company-product .c-pro-item {
-      padding-bottom: 30px;
-      margin-bottom: 30px; }
-      .main-content .detail-left .company-product .c-pro-item:last-child {
-        margin-bottom: 0;
-        border-bottom: 0 none; }
-      .main-content .detail-left .company-product .c-pro-item .p-info {
-        margin-left: 270px; }
-      .main-content .detail-left .company-product .c-pro-item .p-name {
-        margin-right: 20px;
-        font-size: 16px;
-        color: #434343; }
-      .main-content .detail-left .company-product .c-pro-item .p-company {
-        color: #9b9b9b; }
-      .main-content .detail-left .company-product .c-pro-item .p-intro {
-        margin-top: 10px;
-        line-height: 1.8;
-        height: 100px;
-        overflow-y: scroll; }
-      .main-content .detail-left .company-product .c-pro-item .p-website {
-        margin-left: 28px;
+      .detail-left .company-introduce .intro-bd .c-basic {
+        margin-bottom: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #ececec;
         font-size: 12px;
         color: #9b9b9b; }
-      .main-content .detail-left .company-product .c-pro-item .p-type {
-        margin-right: 4px;
-        padding: 0 7px;
-        font-size: 12px;
+      .detail-left .company-introduce .intro-bd .full-name {
+        height: 16px;
+        line-height: 16px;
+        font-size: 14px;
+        color: #000; }
+      .detail-left .company-introduce .intro-bd .found-time {
+        height: 16px;
+        line-height: 16px;
+        font-size: 14px;
+        color: #000; }
+      .detail-left .company-introduce .intro-bd .cur-status {
+        height: 16px;
+        line-height: 16px;
+        padding: 0 5px;
+        margin-left: 8px;
         background-color: #ecf6ff;
-        color: #459ff3;
-        height: 18px;
-        line-height: 18px; }
-      .main-content .detail-left .company-product .c-pro-item.with-pic {
-        border-bottom: 1px solid #ececec;
-        padding-right: 41px;
-        padding-left: 41px; }
-        .main-content .detail-left .company-product .c-pro-item.with-pic.last {
-          margin-bottom: 0; }
-        .main-content .detail-left .company-product .c-pro-item.with-pic .p-name {
-          margin-right: 0;
-          vertical-align: top; }
-        .main-content .detail-left .company-product .c-pro-item.with-pic .p-website {
-          margin-left: 10px; }
-      .main-content .detail-left .company-product .c-pro-item.only-link {
+        color: #459ff3; }
+      .detail-left .company-introduce .intro-bd .c-desc {
         position: relative;
-        padding: 40px 0;
-        margin-bottom: 0;
-        width: 449px;
-        text-align: center; }
-        .main-content .detail-left .company-product .c-pro-item.only-link .p-company {
-          margin-top: 20px; }
-        .main-content .detail-left .company-product .c-pro-item.only-link .icon {
-          position: absolute;
-          right: 60px;
-          top: 60px; }
-        .main-content .detail-left .company-product .c-pro-item.only-link:hover {
-          background: #fafafa; }
-    .main-content .detail-left .timeline-info {
-      color: #4a4a4a; }
-      .main-content .detail-left .timeline-info .bd {
-        padding-bottom: 64px; }
-      .main-content .detail-left .timeline-info .info-item {
-        position: relative;
-        padding-bottom: 48px;
-        margin-left: 125px;
-        padding-left: 22px;
-        padding-right: 56px;
-        border-left: 1px solid #f0f0f0; }
-        .main-content .detail-left .timeline-info .info-item:before {
-          position: absolute;
-          top: 7px;
-          left: -4px;
-          content: '';
-          width: 8px;
-          height: 8px;
-          background-color: #459ff3;
-          border-radius: 8px;
-          box-shadow: 0px 0px 0 2px #f5f5f5; }
-        .main-content .detail-left .timeline-info .info-item:first-child:before {
-          top: 22px; }
-        .main-content .detail-left .timeline-info .info-item:last-child {
-          padding-bottom: 24px; }
-        .main-content .detail-left .timeline-info .info-item .title {
-          font-size: 14px; }
-          .main-content .detail-left .timeline-info .info-item .title .icon {
-            position: relative;
-            top: 3px; }
-        .main-content .detail-left .timeline-info .info-item .desc {
-          font-size: 12px;
-          color: #878787; }
-        .main-content .detail-left .timeline-info .info-item .date {
-          position: absolute;
-          left: -77px;
-          top: 3px;
-          font-size: 14px;
-          color: #4a4a4a; }
-        .main-content .detail-left .timeline-info .info-item:first-child .title {
-          padding-top: 16px; }
-        .main-content .detail-left .timeline-info .info-item:first-child .date {
-          top: 18px; }
-      .main-content .detail-left .timeline-info.news .info-bg:hover {
-        background: #fafafa; }
-      .main-content .detail-left .timeline-info.news .info-item .date {
-        font-size: 12px;
+        height: 84px;
+        padding-bottom: 5px;
+        line-height: 2;
+        overflow-y: hidden; }
+      .detail-left .company-introduce .intro-bd .unfold {
+        position: absolute;
+        right: 0;
+        top: 130px;
+        color: #55adff;
+        font-size: 12px; }
+  .detail-left .company-pics {
+    padding: 20px 0 50px 0;
+    text-align: center; }
+    .detail-left .company-pics .slide-container {
+      margin: auto;
+      width: 400px;
+      height: 300px; }
+      .detail-left .company-pics .slide-container .slick-arrow {
+        width: 16px;
+        height: 22px;
+        background: #fff no-repeat center center;
+        background-size: 100%; }
+        .detail-left .company-pics .slide-container .slick-arrow:before {
+          content: ''; }
+      .detail-left .company-pics .slide-container .slick-next {
+        right: -66px;
+        background-image: url("/assets/pic/sliderright@2x.png"); }
+      .detail-left .company-pics .slide-container .slick-prev {
+        left: -64px;
+        background-image: url("/assets/pic/sliderleft@2x.png"); }
+      .detail-left .company-pics .slide-container .slick-dots {
         position: static;
-        color: #9b9b9b; }
-      .main-content .detail-left .timeline-info.news .info-item .tag {
-        padding: 2px 5px;
-        line-height: 1;
-        font-size: 12px;
-        color: #9b9b9b;
-        border: solid 1px #ececec; }
-      .main-content .detail-left .timeline-info.news .info-item .news-link {
-        margin-top: 14px;
-        font-size: 12px;
-        color: #9b9b9b; }
-  .main-content .detail-right {
-    width: 260px; }
-    .main-content .detail-right .card {
-      padding: 0 0 20px 20px; }
-    .main-content .detail-right .card-hd {
-      margin-left: 0; }
-    .main-content .detail-right .company-history .history-list .h-item {
+        margin-top: 10px; }
+        .detail-left .company-pics .slide-container .slick-dots li button:before {
+          color: #d8d8d8;
+          opacity: 1 !important; }
+        .detail-left .company-pics .slide-container .slick-dots li.slick-active button:before {
+          color: #409be4; }
+  .detail-left .company-team .team-bd {
+    margin: 0 40px 0 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ececec; }
+  .detail-left .company-team .team-person {
+    padding-bottom: 30px; }
+    .detail-left .company-team .team-person:last-child {
+      margin-bottom: 0;
+      border-bottom: 0 none; }
+    .detail-left .company-team .team-person .avatar {
+      width: 60px;
+      height: 60px; }
+      .detail-left .company-team .team-person .avatar img {
+        border-radius: 50%; }
+    .detail-left .company-team .team-person .person-info {
+      margin-left: 80px;
+      margin-bottom: 5px; }
+    .detail-left .company-team .team-person .p-name {
+      font-size: 16px;
+      vertical-align: top; }
+    .detail-left .company-team .team-person .p-title {
+      margin-right: 30px;
+      vertical-align: top;
+      font-size: 16px;
+      color: #9b9b9b; }
+    .detail-left .company-team .team-person .social {
+      width: 20px;
+      height: 20px; }
+  .detail-left .company-product .c-pro-item {
+    margin: 0 41px 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ececec; }
+    .detail-left .company-product .c-pro-item:first-child {
+      padding-top: 30px;
+      border-top: 1px solid #ececec; }
+    .detail-left .company-product .c-pro-item:last-child {
+      margin-bottom: 0;
+      border-bottom: 0 none; }
+  .detail-left .company-product .p-info {
+    margin-left: 220px; }
+  .detail-left .company-product .p-name {
+    margin-right: 8px;
+    font-size: 16px;
+    color: #434343;
+    vertical-align: top; }
+    .detail-left .company-product .p-name:hover {
+      color: #459ff3; }
+  .detail-left .company-product .p-company {
+    color: #9b9b9b; }
+  .detail-left .company-product .p-intro {
+    margin-top: 10px;
+    line-height: 1.8;
+    height: 100px;
+    overflow-y: auto; }
+  .detail-left .timeline-info {
+    color: #4a4a4a; }
+    .detail-left .timeline-info .card-hd {
       position: relative;
-      padding-bottom: 19px;
-      padding-left: 20px;
+      margin-left: 40px;
+      margin-right: 40px; }
+      .detail-left .timeline-info .card-hd:after {
+        content: '';
+        width: 103%;
+        border-bottom: 1px solid #ececec;
+        height: 1px;
+        position: absolute;
+        left: -14px;
+        bottom: -10px; }
+    .detail-left .timeline-info .bd {
+      padding-bottom: 30px; }
+    .detail-left .timeline-info .info-bg:first-child {
+      margin-top: 25px; }
+    .detail-left .timeline-info .info-bg:hover {
+      background: #fafafa; }
+      .detail-left .timeline-info .info-bg:hover .title {
+        color: #459ff3; }
+    .detail-left .timeline-info .info-item {
+      position: relative;
+      margin-left: 115px;
+      padding: 0 56px 48px 22px;
       border-left: 1px solid #f0f0f0; }
-      .main-content .detail-right .company-history .history-list .h-item:before {
+      .detail-left .timeline-info .info-item:before {
         position: absolute;
         top: 7px;
         left: -4px;
@@ -283,34 +217,103 @@ body {
         background-color: #459ff3;
         border-radius: 8px;
         box-shadow: 0px 0px 0 2px #f5f5f5; }
-      .main-content .detail-right .company-history .history-list .h-item:first-child:before {
-        top: 35px; }
-      .main-content .detail-right .company-history .history-list .h-item p {
-        line-height: 2; }
-      .main-content .detail-right .company-history .history-list .h-item .h-date {
-        font-size: 12px; }
-      .main-content .detail-right .company-history .history-list .h-item .h-from {
+      .detail-left .timeline-info .info-item:first-child:before {
+        top: 22px; }
+      .detail-left .timeline-info .info-item:last-child {
+        padding-bottom: 24px; }
+      .detail-left .timeline-info .info-item .title {
+        font-size: 14px; }
+        .detail-left .timeline-info .info-item .title .icon {
+          position: relative;
+          top: 3px; }
+      .detail-left .timeline-info .info-item .desc {
         font-size: 12px;
-        color: #459ff3; }
-    .main-content .detail-right .company-desc {
-      margin-bottom: 20px; }
-    .main-content .detail-right .contacts .email {
-      margin: 18px 0; }
-      .main-content .detail-right .contacts .email a {
+        color: #878787; }
+      .detail-left .timeline-info .info-item .date {
+        position: absolute;
+        left: -77px;
+        top: 3px;
+        font-size: 14px;
         color: #4a4a4a; }
-    .main-content .detail-right .contacts .icon {
-      width: 14px;
-      height: 14px;
-      margin-right: 16px; }
-      .main-content .detail-right .contacts .icon.location {
-        position: relative;
-        top: 6px;
-        height: 22px; }
-    .main-content .detail-right .other-company .other-com {
+      .detail-left .timeline-info .info-item:first-child .title {
+        padding-top: 16px; }
+      .detail-left .timeline-info .info-item:first-child .date {
+        top: 18px; }
+    .detail-left .timeline-info.news .info-item .tag {
+      padding: 2px 5px;
+      line-height: 1;
+      font-size: 12px;
+      color: #9b9b9b;
+      border: solid 1px #ececec; }
+    .detail-left .timeline-info.news .info-item .news-link {
+      margin-top: 14px;
+      font-size: 12px;
+      color: #9b9b9b; }
+    .detail-left .timeline-info .show-all {
       display: block;
-      margin-bottom: 20px; }
-    .main-content .detail-right .other-company .other-name {
-      margin-left: 54px;
-      height: 40px;
-      line-height: 40px;
-      color: #434343; }
+      margin-top: 20px;
+      font-size: 12px;
+      color: #9b9b9b;
+      text-align: center; }
+  .detail-left ::-webkit-scrollbar {
+    width: 5px; }
+  .detail-left ::-webkit-scrollbar-track {
+    background: #ededed;
+    border-radius: 10px; }
+  .detail-left ::-webkit-scrollbar-thumb {
+    background: #459ff3; }
+
+.detail-right {
+  width: 260px; }
+  .detail-right .card {
+    padding: 0 0 20px 20px; }
+    .detail-right .card .card-hd {
+      margin-left: 0; }
+  .detail-right .company-history .history-list .h-item {
+    position: relative;
+    padding-bottom: 19px;
+    padding-left: 20px;
+    border-left: 1px solid #f0f0f0; }
+    .detail-right .company-history .history-list .h-item:before {
+      position: absolute;
+      top: 7px;
+      left: -4px;
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #459ff3;
+      border-radius: 8px;
+      box-shadow: 0px 0px 0 2px #f5f5f5; }
+    .detail-right .company-history .history-list .h-item:first-child:before {
+      top: 35px; }
+    .detail-right .company-history .history-list .h-item:last-child {
+      padding-bottom: 0; }
+    .detail-right .company-history .history-list .h-item p {
+      line-height: 2; }
+    .detail-right .company-history .history-list .h-item .h-date {
+      font-size: 12px; }
+    .detail-right .company-history .history-list .h-item .h-from {
+      font-size: 12px;
+      color: #459ff3; }
+  .detail-right .company-desc {
+    margin-bottom: 20px; }
+  .detail-right .contacts .email {
+    margin: 18px 0; }
+    .detail-right .contacts .email a {
+      color: #4a4a4a; }
+  .detail-right .contacts .icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 16px; }
+    .detail-right .contacts .icon.location {
+      position: relative;
+      top: 6px;
+      height: 22px; }
+  .detail-right .other-company .other-com {
+    display: block;
+    margin-bottom: 20px; }
+  .detail-right .other-company .other-name {
+    margin-left: 54px;
+    height: 40px;
+    line-height: 40px;
+    color: #434343; }
