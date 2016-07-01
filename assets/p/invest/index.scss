@@ -92,9 +92,12 @@ body {
         p {
             color: #d5d5d5;
         }
-        .icon {
-            margin-left: 10px;
-            vertical-align: middle;
+        .p-info {
+            .icon {
+                margin-left: 10px;
+                vertical-align: middle;
+            }
+            
         }
     }
 }
