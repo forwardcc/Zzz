@@ -396,6 +396,22 @@ body {
             margin: 0;
         }
     }
+    .experience {
+        .card-bd {
+            margin-left: 15px;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+        .info {
+            font-size: 14px;
+            color: $textColor;
+        }
+        .time {
+            font-size: 12px;
+            color: #9b9b9b;
+        }
+    }
     .company-date {
         padding: 20px 0;
         font-size: 0;
