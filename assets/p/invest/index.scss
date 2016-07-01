@@ -1,0 +1,449 @@
+@charset"utf-8";
+
+@import '../../c/mixin.scss';
+@import '../../c/variables.scss';
+
+@import '../../c/common.css';
+@import '../../c/header-footer.css';
+
+body {
+    background: $bodyBackColor;
+}
+
+.main-content {
+    .card {
+        margin-bottom: 15px;
+        background: #fff;
+        color: $textColor;
+        font-size: $textSize;
+        border: 1px solid #ececec;
+        .card-hd {
+            @include vertical-center(20px);
+            margin: 20px 0 24px;
+            border-left: 4px solid $backBlue;
+            margin-left: 41px;
+            text-indent: 9px;
+        }
+        .card-bd {
+            margin: 0 30px 0 40px;
+            padding: 15px 0;
+            border-top: 1px solid #ececec;
+        }
+    }
+}
+
+.invester {
+    height: 150px;
+    padding-top: 110px;
+    margin-bottom: 10px;
+    background: #474747 url(/assets/pic/imagebg@2x.png) no-repeat center center;
+    background-size: cover;
+    .card {
+        width: 1180px;
+        margin: auto;
+        border: 0;
+        color: #fff;
+        background: none;
+    }
+    .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .p-info {
+        margin-left: 140px;
+        padding-top: 15px;
+        font-size: 14px;
+        .name {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            span {
+                font-size: 12px;
+            }
+        }
+        .tag {
+            border-radius: 50px;
+            padding: 0 10px;
+            border: 1px solid #fff;
+            margin-bottom: 10px;
+        }
+    }
+    .share {
+        background: #fff;
+        padding: 3px 6px;
+        color: $textColor;
+        border-radius: 3px;
+        font-size: 12px;
+        i {
+            vertical-align: top;
+        }
+    }
+
+    &.company {
+        .avatar {
+            border-radius: 3px;
+        }
+        .name {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        p {
+            color: #d5d5d5;
+        }
+        .icon {
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+    }
+}
+
+// 详情
+.s-label {
+    height: 20px;
+    padding: 0 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    background-color: #ecf6ff;
+    color: #459ff3;
+}
+.detail-left {
+    width: 900px;
+    margin-right: 20px;
+    .card {
+        .card-hd {
+            margin-bottom: 10px;
+        }
+    }
+    .invest-intro {
+        .desc {
+            font-size: 12px;
+            color: $textColor;
+            line-height: 1.7;
+        }
+    }
+
+    .invest-case {
+        .card-bd {
+            font-size: 0;
+        }
+        .labels {
+            .label {
+                width: 80px;
+                height: 24px;
+                margin: 0 10px 20px 0;
+                line-height: 24px;
+                border: solid 1px #ececec;
+                text-align: center;
+                font-size: 12px;
+                color: $textColor;
+                &.active {
+                    color: #459ff3;
+                }
+            }
+        }
+        .item {
+            width: 368px;
+            height: 158px;
+            padding: 20px 0 0 20px;
+            margin: 0 16px 16px 0;
+            border: 1px solid #ececec;
+        }
+        .info {
+            .info-desc {
+                margin-left: 50px;
+                .title {
+                    font-size: 16px;
+                    color: $textColor;
+                }
+                .sub-title {
+                    font-size: 12px;
+                    color: #9b9b9b;
+                }
+            }
+        }
+        .timeline {
+            margin-top: 15px;
+            height: 90px;
+            overflow-y: auto;
+        }
+        .info-bg {
+            background: #fff !important;
+            margin-top: 0 !important;
+            color: $textColor;
+            &:hover {
+                .info-item {
+                    .title {
+                        color: $textColor;
+                    }
+                }
+            }
+            &:first-child {
+                .info-item {
+                    &:before  {
+                        top: 5px;
+                    }
+                    .title {
+                        margin-top: -2px;
+                        padding-top: 0;
+                    }
+                    .date {
+                        top: 3px;
+                    }
+                }
+            }
+            &.current {
+                .info-item {
+                    color: $backBlue;
+                    .title,
+                    .date,
+                    .tag {
+                        color: $backBlue;
+                    }
+                     &:before  {
+                        background: $backBlue;
+                    }
+                } 
+            }
+            .info-item {
+                margin-left: 55px;
+                padding: 0 0 15px 10px;
+                font-size: 12px;
+                &:before  {
+                    top: 17px;
+                    background: #9b9b9b;
+                }
+                .title {
+                    padding-top: 10px;
+                    font-size: 12px;
+                }
+                .date {
+                    top: 14px;
+                    left: -55px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .members {
+        .item {
+            margin-bottom: 40px;
+        }
+        .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .info {
+            width: 512px;
+        }
+        .name {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: $textColor;
+            span {
+                color: #9b9b9b;
+            }
+        }
+        .invested {
+            .title {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .s-label {
+                color: $textColor;
+                background-color: #ececec;
+            }
+        }
+    }
+
+    .timeline {
+        color: $textColor;
+        .card-hd {
+            position: relative;
+            margin-left: 40px;
+            margin-right: 40px;
+            &:after {
+                content: '';
+                width: 103%;
+                border-bottom: 1px solid #ececec;
+                height: 1px;
+                position: absolute;
+                left: -14px;
+                bottom: -10px;
+            }
+        }
+        .bd {
+            padding-bottom: 30px;
+        }
+        .info-bg {
+            &:first-child {
+                margin-top: 25px;
+            }
+            &:hover {
+                background: #fafafa;
+                .title {
+                    color: $backBlue;
+                }
+            }
+        }
+        .info-item {
+            position: relative;
+            margin-left: 115px;
+            padding: 0 56px 24px 22px;
+            border-left: 1px solid #f0f0f0;
+            &:before {
+                position: absolute;
+                top: 22px;
+                left: -4px;
+                content: '';
+                width: 8px;
+                height: 8px;
+                background-color: #459ff3;
+                border-radius: 8px;
+                box-shadow: 0px 0px 0 2px #f5f5f5;
+            }
+            .title {
+                font-size: 14px;
+                padding-top: 16px;
+                .icon {
+                    position: relative;
+                    top: 3px;
+                }
+            }
+            .desc {
+                font-size: 12px;
+                color: #878787;
+            }
+            .date {
+                position: absolute;
+                left: -77px;
+                top: 18px;
+                font-size: 14px;
+                color: $textColor;
+            }
+        }
+        
+    }
+    .news {
+        .info-item {
+            .tag {
+                padding: 2px 5px;
+                line-height: 1;
+                font-size: 12px;
+                color: #9b9b9b;
+                border: solid 1px #ececec;
+            }
+            .news-link {
+                margin-top: 14px;
+                font-size: 12px;
+                color: #9b9b9b;
+            }
+        }
+    }
+    .show-all {
+        display: block;
+        margin-top: 20px;
+        font-size: 12px;
+        color: #9b9b9b;
+        text-align: center;
+    }
+
+    /* 设置滚动条的样式 */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    /* 滚动槽 */
+    ::-webkit-scrollbar-track {
+        background: #ededed;
+        border-radius: 10px;
+    }
+    /* 滚动条滑块 */
+    ::-webkit-scrollbar-thumb {
+        background: #459ff3
+    }
+}
+
+.invest-limit {
+    .money {
+        color: #000;
+        font-size: 14px;
+        .item {
+            margin-right: 20px;
+        }
+        i {
+            font-size: 12px;
+            font-style: normal;
+        }
+    }
+}
+
+.detail-right {
+    width: 260px;
+    .card {
+        padding: 0 0 20px 20px;
+        .card-hd {
+            margin-bottom: 12px;
+            margin-left: 0;
+        }
+        .card-bd {
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+    }
+    .company-date {
+        padding: 20px 0;
+        font-size: 0;
+        .item {
+            width: 50%;
+            font-size: 20px;
+            text-align: center;
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    .invest-stage {
+        border-bottom: 0;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .invest-limit {
+        border-top-color: transparent;
+    }
+    .contacts {
+        .card-bd {
+            font-size: 12px;
+        }
+        .email {
+            margin: 18px 0;
+            a {
+                color: #4a4a4a;
+            }
+        }
+        .address {
+            p {
+                .addr {
+                    color: #9b9b9b;
+                }
+                margin-bottom: 10px;
+            }
+        }
+        .icon {
+            width: 14px;
+            height: 14px;
+            margin-right: 16px;
+            vertical-align: top;
+            &.location {
+                position: relative;
+                top: 6px;
+                height: 22px;
+            }
+        }
+    }
+}

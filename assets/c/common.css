@@ -294,7 +294,8 @@ i.icon {
       font-size: 14px; }
     .main-content .project-item .proj-desc .p-tag .tag-list {
       margin-left: 75px;
-      font-size: 0; }
+      font-size: 0;
+      color: #4a4a4a; }
       .main-content .project-item .proj-desc .p-tag .tag-list .t-name {
         height: 18px;
         line-height: 18px;

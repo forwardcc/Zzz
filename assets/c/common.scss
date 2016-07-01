@@ -292,6 +292,7 @@ i.icon {
                 .tag-list {
                     margin-left: 75px;
                     font-size: 0;
+                    color: $textColor;
                     .t-name {
                         @include vertical-center(18px);
                         padding: 0 5px;

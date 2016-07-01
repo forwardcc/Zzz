@@ -297,6 +297,8 @@ body {
       color: #459ff3; }
   .detail-right .company-desc {
     margin-bottom: 20px; }
+    .detail-right .company-desc a {
+      color: #4a4a4a; }
   .detail-right .contacts .email {
     margin: 18px 0; }
     .detail-right .contacts .email a {

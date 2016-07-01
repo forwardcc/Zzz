@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@import url(../../c/common.css);
+@import url(../../c/header-footer.css);
+body {
+  background: #f8f8f8; }
+
+.main-content .card {
+  margin-bottom: 15px;
+  background: #fff;
+  color: #4a4a4a;
+  font-size: 14px;
+  border: 1px solid #ececec; }
+  .main-content .card .card-hd {
+    height: 20px;
+    line-height: 20px;
+    margin: 20px 0 24px;
+    border-left: 4px solid #459ff3;
+    margin-left: 41px;
+    text-indent: 9px; }
+  .main-content .card .card-bd {
+    margin: 0 30px 0 40px;
+    padding: 15px 0;
+    border-top: 1px solid #ececec; }
+
+.invester {
+  height: 150px;
+  padding-top: 110px;
+  margin-bottom: 10px;
+  background: #474747 url(/assets/pic/imagebg@2x.png) no-repeat center center;
+  background-size: cover; }
+  .invester .card {
+    width: 1180px;
+    margin: auto;
+    border: 0;
+    color: #fff;
+    background: none; }
+  .invester .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden; }
+  .invester .p-info {
+    margin-left: 140px;
+    padding-top: 15px;
+    font-size: 14px; }
+    .invester .p-info .name {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px; }
+      .invester .p-info .name span {
+        font-size: 12px; }
+    .invester .p-info .tag {
+      border-radius: 50px;
+      padding: 0 10px;
+      border: 1px solid #fff;
+      margin-bottom: 10px; }
+  .invester .share {
+    background: #fff;
+    padding: 3px 6px;
+    color: #4a4a4a;
+    border-radius: 3px;
+    font-size: 12px; }
+    .invester .share i {
+      vertical-align: top; }
+  .invester.company .avatar {
+    border-radius: 3px; }
+  .invester.company .name {
+    margin-top: 15px;
+    margin-bottom: 25px; }
+  .invester.company p {
+    color: #d5d5d5; }
+  .invester.company .icon {
+    margin-left: 10px;
+    vertical-align: middle; }
+
+.s-label {
+  height: 20px;
+  padding: 0 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  background-color: #ecf6ff;
+  color: #459ff3; }
+
+.detail-left {
+  width: 900px;
+  margin-right: 20px;
+  /* 设置滚动条的样式 */
+  /* 滚动槽 */
+  /* 滚动条滑块 */ }
+  .detail-left .card .card-hd {
+    margin-bottom: 10px; }
+  .detail-left .invest-intro .desc {
+    font-size: 12px;
+    color: #4a4a4a;
+    line-height: 1.7; }
+  .detail-left .invest-case .card-bd {
+    font-size: 0; }
+  .detail-left .invest-case .labels .label {
+    width: 80px;
+    height: 24px;
+    margin: 0 10px 20px 0;
+    line-height: 24px;
+    border: solid 1px #ececec;
+    text-align: center;
+    font-size: 12px;
+    color: #4a4a4a; }
+    .detail-left .invest-case .labels .label.active {
+      color: #459ff3; }
+  .detail-left .invest-case .item {
+    width: 368px;
+    height: 158px;
+    padding: 20px 0 0 20px;
+    margin: 0 16px 16px 0;
+    border: 1px solid #ececec; }
+  .detail-left .invest-case .info .info-desc {
+    margin-left: 50px; }
+    .detail-left .invest-case .info .info-desc .title {
+      font-size: 16px;
+      color: #4a4a4a; }
+    .detail-left .invest-case .info .info-desc .sub-title {
+      font-size: 12px;
+      color: #9b9b9b; }
+  .detail-left .invest-case .timeline {
+    margin-top: 15px;
+    height: 90px;
+    overflow-y: auto; }
+  .detail-left .invest-case .info-bg {
+    background: #fff !important;
+    margin-top: 0 !important;
+    color: #4a4a4a; }
+    .detail-left .invest-case .info-bg:hover .info-item .title {
+      color: #4a4a4a; }
+    .detail-left .invest-case .info-bg:first-child .info-item:before {
+      top: 5px; }
+    .detail-left .invest-case .info-bg:first-child .info-item .title {
+      margin-top: -2px;
+      padding-top: 0; }
+    .detail-left .invest-case .info-bg:first-child .info-item .date {
+      top: 3px; }
+    .detail-left .invest-case .info-bg.current .info-item {
+      color: #459ff3; }
+      .detail-left .invest-case .info-bg.current .info-item .title,
+      .detail-left .invest-case .info-bg.current .info-item .date,
+      .detail-left .invest-case .info-bg.current .info-item .tag {
+        color: #459ff3; }
+      .detail-left .invest-case .info-bg.current .info-item:before {
+        background: #459ff3; }
+    .detail-left .invest-case .info-bg .info-item {
+      margin-left: 55px;
+      padding: 0 0 15px 10px;
+      font-size: 12px; }
+      .detail-left .invest-case .info-bg .info-item:before {
+        top: 17px;
+        background: #9b9b9b; }
+      .detail-left .invest-case .info-bg .info-item .title {
+        padding-top: 10px;
+        font-size: 12px; }
+      .detail-left .invest-case .info-bg .info-item .date {
+        top: 14px;
+        left: -55px;
+        font-size: 12px; }
+  .detail-left .members .item {
+    margin-bottom: 40px; }
+  .detail-left .members .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px; }
+  .detail-left .members .info {
+    width: 512px; }
+  .detail-left .members .name {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #4a4a4a; }
+    .detail-left .members .name span {
+      color: #9b9b9b; }
+  .detail-left .members .invested .title {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .detail-left .members .invested .s-label {
+    color: #4a4a4a;
+    background-color: #ececec; }
+  .detail-left .timeline {
+    color: #4a4a4a; }
+    .detail-left .timeline .card-hd {
+      position: relative;
+      margin-left: 40px;
+      margin-right: 40px; }
+      .detail-left .timeline .card-hd:after {
+        content: '';
+        width: 103%;
+        border-bottom: 1px solid #ececec;
+        height: 1px;
+        position: absolute;
+        left: -14px;
+        bottom: -10px; }
+    .detail-left .timeline .bd {
+      padding-bottom: 30px; }
+    .detail-left .timeline .info-bg:first-child {
+      margin-top: 25px; }
+    .detail-left .timeline .info-bg:hover {
+      background: #fafafa; }
+      .detail-left .timeline .info-bg:hover .title {
+        color: #459ff3; }
+    .detail-left .timeline .info-item {
+      position: relative;
+      margin-left: 115px;
+      padding: 0 56px 24px 22px;
+      border-left: 1px solid #f0f0f0; }
+      .detail-left .timeline .info-item:before {
+        position: absolute;
+        top: 22px;
+        left: -4px;
+        content: '';
+        width: 8px;
+        height: 8px;
+        background-color: #459ff3;
+        border-radius: 8px;
+        box-shadow: 0px 0px 0 2px #f5f5f5; }
+      .detail-left .timeline .info-item .title {
+        font-size: 14px;
+        padding-top: 16px; }
+        .detail-left .timeline .info-item .title .icon {
+          position: relative;
+          top: 3px; }
+      .detail-left .timeline .info-item .desc {
+        font-size: 12px;
+        color: #878787; }
+      .detail-left .timeline .info-item .date {
+        position: absolute;
+        left: -77px;
+        top: 18px;
+        font-size: 14px;
+        color: #4a4a4a; }
+  .detail-left .news .info-item .tag {
+    padding: 2px 5px;
+    line-height: 1;
+    font-size: 12px;
+    color: #9b9b9b;
+    border: solid 1px #ececec; }
+  .detail-left .news .info-item .news-link {
+    margin-top: 14px;
+    font-size: 12px;
+    color: #9b9b9b; }
+  .detail-left .show-all {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #9b9b9b;
+    text-align: center; }
+  .detail-left ::-webkit-scrollbar {
+    width: 5px; }
+  .detail-left ::-webkit-scrollbar-track {
+    background: #ededed;
+    border-radius: 10px; }
+  .detail-left ::-webkit-scrollbar-thumb {
+    background: #459ff3; }
+
+.invest-limit .money {
+  color: #000;
+  font-size: 14px; }
+  .invest-limit .money .item {
+    margin-right: 20px; }
+  .invest-limit .money i {
+    font-size: 12px;
+    font-style: normal; }
+
+.detail-right {
+  width: 260px; }
+  .detail-right .card {
+    padding: 0 0 20px 20px; }
+    .detail-right .card .card-hd {
+      margin-bottom: 12px;
+      margin-left: 0; }
+    .detail-right .card .card-bd {
+      padding: 0;
+      border: 0;
+      margin: 0; }
+  .detail-right .company-date {
+    padding: 20px 0;
+    font-size: 0; }
+    .detail-right .company-date .item {
+      width: 50%;
+      font-size: 20px;
+      text-align: center; }
+      .detail-right .company-date .item p {
+        font-size: 12px; }
+  .detail-right .invest-stage {
+    border-bottom: 0;
+    margin: 0;
+    padding-bottom: 0; }
+  .detail-right .invest-limit {
+    border-top-color: transparent; }
+  .detail-right .contacts .card-bd {
+    font-size: 12px; }
+  .detail-right .contacts .email {
+    margin: 18px 0; }
+    .detail-right .contacts .email a {
+      color: #4a4a4a; }
+  .detail-right .contacts .address p {
+    margin-bottom: 10px; }
+    .detail-right .contacts .address p .addr {
+      color: #9b9b9b; }
+  .detail-right .contacts .icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 16px;
+    vertical-align: top; }
+    .detail-right .contacts .icon.location {
+      position: relative;
+      top: 6px;
+      height: 22px; }
